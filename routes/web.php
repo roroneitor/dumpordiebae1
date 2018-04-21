@@ -31,6 +31,7 @@ Route::get('/cliente/{cliente}/editar', 'ClientesController@edit')->name('Editar
 Route::patch('/cliente/{cliente}', 'ClientesController@update')->name('ActualizarCliente');
 
 //Proyectos
+//Esto es un comentario
 Route::get('/proyectos/ver', 'ProyectosController@show')->name('MostrarProyectos');
 Route::get('/proyectos/crear', 'ProyectosController@create')->name('CrearProyecto');
 Route::post('/proyectos/guardar', 'ProyectosController@store')->name('GuardarProyecto');
