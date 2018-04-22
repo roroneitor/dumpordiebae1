@@ -15,7 +15,6 @@
               <th>Titulo</th>
               <th>Fecha Inicial</th>
               <th>Fecha Final</th>
-              <th>descripción</th>
               <th>Acción</th>
           </tr>
       </thead>
@@ -25,7 +24,6 @@
               <td>{{ $proyecto->title}}</td>
               <td>{{ $proyecto->date_init}}</td>
               <td>{{ $proyecto->date_end}}</td>
-              <td>{{ $proyecto->description}}</td>
               <td>
 
                 <form action="{{ route('EliminarProyecto', $proyecto->id) }}" method="POST">
@@ -45,7 +43,6 @@
         <th>Titulo</th>
         <th>Fecha Inicial</th>
         <th>Fecha Final</th>
-        <th>descripción</th>
         <th>Acción</th>
       </tr>
       </tfoot>

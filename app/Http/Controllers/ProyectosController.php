@@ -5,12 +5,15 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Proyectos;
 use App\Clientes;
+use App\User;
 
 class ProyectosController extends Controller
 {
-  public function create()
+  public function create(Clientes $cliente)
   {
-      return view('projects.addproject');
+    $usuarios = User::get();
+    $clientes = Clientes::get();
+      return view('projects.addproject',compact ('clientes', 'usuarios'));
   }
 
   //Mostrar Clientes

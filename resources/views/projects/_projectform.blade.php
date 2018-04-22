@@ -3,6 +3,22 @@
   <input type="text" class="form-control" id="title" name="title" value="{{ old('title', isset($proyecto) ? $proyecto->title : '') }}">
 </div>
 <div class="form-group">
+<label>Cliente</label>
+<select type="text" class="form-control select2" id="country_id" name="country_id">
+@foreach ($clientes as $cliente)
+<option>{{$cliente->business_name}} </option>
+@endforeach
+</select>
+</div>
+<div class="form-group">
+<label>Programador encargado</label>
+<select type="text" class="form-control select2" id="country_id" name="country_id">
+@foreach ($usuarios as $usuario)
+<option>{{$usuario->name}} </option>
+@endforeach
+</select>
+</div>
+<div class="form-group">
   <label>Fecha Inicial</label>
   <input type="date" class="form-control" id="date_init"  name="date_init" value="{{ old('date_init', isset($proyecto) ? $proyecto->date_init : '') }}">
 </div>
