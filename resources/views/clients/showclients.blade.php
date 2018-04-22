@@ -32,8 +32,8 @@
               <td>{{ $cliente->id_number}}</td>
               <td>{{ $cliente->email}}</td>
               <td>{{ $cliente->phone}}</td>
-              <td>{{$cliente->country_id}}</td>
-              <td>{{$cliente->state_id}}</td>
+              <td value="{{$cliente->country_id}}">{{$cliente->country_id}}</td>
+              <td value="{{$cliente->state_id}}">{{$cliente->state_id}}</td>
               <td>
 
                 <form action="{{ route('EliminarCliente', $cliente->id) }}" method="POST">
