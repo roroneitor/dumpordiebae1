@@ -6,7 +6,7 @@
 <label>Cliente</label>
 <select type="text" class="form-control select2" id="client_id" name="client_id">
 <?php $__currentLoopData = $clientes; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $cliente): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-<option value"<?php echo e($cliente->id); ?>"><?php echo e($cliente->business_name); ?> </option>
+<option value"<?php echo e($cliente->id_number); ?>"><?php echo e($cliente->id_number); ?></option>
 <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
 </select>
 </div>
@@ -14,7 +14,7 @@
 <label>Programador Responsable</label>
 <select type="text" class="form-control select2" id="responsible_user_id" name="responsible_user_id">
 <?php $__currentLoopData = $usuarios; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $usuario): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-<option value"<?php echo e($usuario->id); ?>"><?php echo e($usuario->name); ?></option>
+<option value"<?php echo e($usuario->id); ?>"><?php echo e($usuario->id); ?></option>
 <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
 </select>
 </div>

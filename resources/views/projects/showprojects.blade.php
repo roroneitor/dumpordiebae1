@@ -13,6 +13,8 @@
       <thead>
           <tr>
               <th>Titulo</th>
+              <th>Cliente</th>
+              <th>Programador responsable</th>
               <th>Fecha Inicial</th>
               <th>Fecha Final</th>
               <th>Acción</th>
@@ -22,6 +24,8 @@
       @foreach ($proyectos as $proyecto)
           <tr>
               <td>{{ $proyecto->title}}</td>
+              <td>{{ $proyecto->cliente_id}}</td>
+              <td>{{ $proyecto->responsible_user_id}}</td>
               <td>{{ $proyecto->date_init}}</td>
               <td>{{ $proyecto->date_end}}</td>
               <td>
@@ -41,6 +45,8 @@
       <tfoot>
       <tr>
         <th>Titulo</th>
+        <th>Cliente</th>
+        <th>Programador responsable</th>
         <th>Fecha Inicial</th>
         <th>Fecha Final</th>
         <th>Acción</th>

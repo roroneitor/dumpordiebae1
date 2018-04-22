@@ -28,17 +28,20 @@ class ProyectosController extends Controller
 
     $this->validate($request, [
       'title' => 'required',
+      'client_id' => 'required',
+      'responsible_user_id' => 'required',
       'date_init' => 'required',
       'date_end' => 'required',
-      'description' => 'required',
-      'id_number' => 'required'
+      'description' => 'required'
+
     ]);
     $proyecto = New Proyectos;
     $proyecto->title = request()->title;
+    $proyecto->client_id = request()->client_id;
+    $proyecto->responsible_user_id = request()->responsible_user_id;
     $proyecto->date_init = request()->date_init;
     $proyecto->date_end = request()->date_end;
     $proyecto->description = request()->description;
-    $proyecto->user_id= auth()->user()->id;
     $proyecto->save();
 
     return redirect('home');
@@ -46,7 +49,9 @@ class ProyectosController extends Controller
 
   public function edit(Proyectos $proyecto)
   {
-      return view('projects.editproject', compact('proyecto'));
+    $usuarios = User::get();
+    $clientes = Clientes::get();
+      return view('projects.editproject', compact('proyecto', 'clientes', 'usuarios'));
   }
 
   public function update(Proyectos $proyecto, Request $request)
@@ -54,12 +59,17 @@ class ProyectosController extends Controller
 
     $this->validate($request, [
       'title' => 'required',
+      'client_id' => 'required',
+      'responsible_user_id' => 'required',
       'date_init' => 'required',
       'date_end' => 'required',
       'description' => 'required'
-    ]);
 
+    ]);
+    $proyecto = New Proyectos;
     $proyecto->title = request()->title;
+    $proyecto->client_id = request()->client_id;
+    $proyecto->responsible_user_id = request()->responsible_user_id;
     $proyecto->date_init = request()->date_init;
     $proyecto->date_end = request()->date_end;
     $proyecto->description = request()->description;

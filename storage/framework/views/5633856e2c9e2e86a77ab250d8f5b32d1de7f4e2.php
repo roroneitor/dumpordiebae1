@@ -11,6 +11,8 @@
       <thead>
           <tr>
               <th>Titulo</th>
+              <th>Cliente</th>
+              <th>Programador responsable</th>
               <th>Fecha Inicial</th>
               <th>Fecha Final</th>
               <th>Acción</th>
@@ -20,6 +22,8 @@
       <?php $__currentLoopData = $proyectos; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $proyecto): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
           <tr>
               <td><?php echo e($proyecto->title); ?></td>
+              <td><?php echo e($proyecto->cliente_id); ?></td>
+              <td><?php echo e($proyecto->responsible_user_id); ?></td>
               <td><?php echo e($proyecto->date_init); ?></td>
               <td><?php echo e($proyecto->date_end); ?></td>
               <td>
@@ -41,6 +45,8 @@
       <tfoot>
       <tr>
         <th>Titulo</th>
+        <th>Cliente</th>
+        <th>Programador responsable</th>
         <th>Fecha Inicial</th>
         <th>Fecha Final</th>
         <th>Acción</th>

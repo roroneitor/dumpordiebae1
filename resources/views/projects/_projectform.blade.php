@@ -6,7 +6,7 @@
 <label>Cliente</label>
 <select type="text" class="form-control select2" id="client_id" name="client_id">
 @foreach ($clientes as $cliente)
-<option value"{{$cliente->id}}">{{$cliente->business_name}} </option>
+<option>{{$cliente->id_number}}</option>
 @endforeach
 </select>
 </div>
@@ -14,7 +14,7 @@
 <label>Programador Responsable</label>
 <select type="text" class="form-control select2" id="responsible_user_id" name="responsible_user_id">
 @foreach ($usuarios as $usuario)
-<option value"{{$usuario->id}}">{{$usuario->name}}</option>
+<option>{{$usuario->id}}</option>
 @endforeach
 </select>
 </div>
