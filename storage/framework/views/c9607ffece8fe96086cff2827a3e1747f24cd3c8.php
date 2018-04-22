@@ -4,17 +4,17 @@
 </div>
 <div class="form-group">
 <label>Cliente</label>
-<select type="text" class="form-control select2" id="country_id" name="country_id">
+<select type="text" class="form-control select2" id="client_id" name="client_id">
 <?php $__currentLoopData = $clientes; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $cliente): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-<option><?php echo e($cliente->business_name); ?> </option>
+<option value"<?php echo e($cliente->id); ?>"><?php echo e($cliente->business_name); ?> </option>
 <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
 </select>
 </div>
 <div class="form-group">
-<label>Programador encargado</label>
-<select type="text" class="form-control select2" id="country_id" name="country_id">
+<label>Programador Responsable</label>
+<select type="text" class="form-control select2" id="responsible_user_id" name="responsible_user_id">
 <?php $__currentLoopData = $usuarios; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $usuario): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-<option><?php echo e($usuario->name); ?> </option>
+<option value"<?php echo e($usuario->id); ?>"><?php echo e($usuario->name); ?></option>
 <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
 </select>
 </div>
@@ -30,4 +30,3 @@
      <label for="description">Descripción</label>
      <textarea name="description" class="form-control" rows="2" type="" id="description" placeholder="Ingrese una breve Descripción  "><?php echo e(old('description', isset($proyecto) ? $proyecto->description : '')); ?></textarea>
    </div>
-auth()->user()->id;

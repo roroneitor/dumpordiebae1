@@ -4,17 +4,17 @@
 </div>
 <div class="form-group">
 <label>Cliente</label>
-<select type="text" class="form-control select2" id="country_id" name="country_id">
+<select type="text" class="form-control select2" id="client_id" name="client_id">
 @foreach ($clientes as $cliente)
-<option>{{$cliente->business_name}} </option>
+<option value"{{$cliente->id}}">{{$cliente->business_name}} </option>
 @endforeach
 </select>
 </div>
 <div class="form-group">
-<label>Programador encargado</label>
-<select type="text" class="form-control select2" id="country_id" name="country_id">
+<label>Programador Responsable</label>
+<select type="text" class="form-control select2" id="responsible_user_id" name="responsible_user_id">
 @foreach ($usuarios as $usuario)
-<option>{{$usuario->name}} </option>
+<option value"{{$usuario->id}}">{{$usuario->name}}</option>
 @endforeach
 </select>
 </div>
