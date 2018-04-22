@@ -27,7 +27,6 @@
 <select type="text" class="form-control select2"  id="state_id" name="state_id">
   @foreach ($states as $estado)
 <option  value="{{$estado->id}}" {{isset($cliente) ? ($cliente->state_id == $estado->id ? 'selected': '') : ''}}>{{$estado->name}}</option>
-
 @endforeach
 </select>
 </div>
