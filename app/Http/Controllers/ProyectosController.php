@@ -28,7 +28,6 @@ class ProyectosController extends Controller
 
     $this->validate($request, [
       'title' => 'required',
-      'client_id' => 'required',
       'responsible_user_id' => 'required',
       'date_init' => 'required',
       'date_end' => 'required',
@@ -37,7 +36,6 @@ class ProyectosController extends Controller
     ]);
     $proyecto = New Proyectos;
     $proyecto->title = request()->title;
-    $proyecto->client_id = request()->client_id;
     $proyecto->responsible_user_id = request()->responsible_user_id;
     $proyecto->date_init = request()->date_init;
     $proyecto->date_end = request()->date_end;

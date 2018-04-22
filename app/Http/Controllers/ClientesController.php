@@ -72,14 +72,15 @@ class ClientesController extends Controller
       'state_id' => 'required',
       'description' => 'required'
     ]);
-
-    $cliente->business_name = request()->business_name;
-    $cliente->id_number = request()->id_number;
-    $cliente->email = request()->email;
-    $cliente->phone = request()->phone;
+    $Cliente = New Clientes;
+    $Cliente->business_name = request()->business_name;
+    $Cliente->id_number = request()->id_number;
+    $Cliente->email = request()->email;
+    $Cliente->phone = request()->phone;
     $Cliente->country_id = request()->country_id;
     $Cliente->state_id = request()->state_id;
-    $cliente->description = request()->description;
+    $Cliente->description = request()->description;
+    $Cliente->created_user_id = auth()->user()->id;
     $cliente->update();
 
       return view('home');
