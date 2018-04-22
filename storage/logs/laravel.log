@@ -6224,3 +6224,24 @@ avar\\Desktop\\poteito\\dumpordiebae1\\server.php(21): require_once('C:\\\\Users
 avar\\\\...')
 #53 {main}
 "} 
+[2018-04-22 15:32:17] local.ERROR: Command "server" is not defined.
+
+Did you mean this?
+    serve {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"server\" is not defined.
+
+Did you mean this?
+    serve at C:\\Users\
+avar\\Desktop\\poteito\\dumpordiebae1\\vendor\\symfony\\console\\Application.php:611)
+[stacktrace]
+#0 C:\\Users\
+avar\\Desktop\\poteito\\dumpordiebae1\\vendor\\symfony\\console\\Application.php(224): Symfony\\Component\\Console\\Application->find('server')
+#1 C:\\Users\
+avar\\Desktop\\poteito\\dumpordiebae1\\vendor\\symfony\\console\\Application.php(143): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#2 C:\\Users\
+avar\\Desktop\\poteito\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(88): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 C:\\Users\
+avar\\Desktop\\poteito\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(122): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 C:\\Users\
+avar\\Desktop\\poteito\\dumpordiebae1\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 
