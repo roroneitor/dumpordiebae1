@@ -4,82 +4,162 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Proyectos;
+use App\Modulos;
+use DB;
 use App\Clientes;
-use App\User;
+
+use Carbon\Carbon;
 
 class ProyectosController extends Controller
 {
-  public function create(Clientes $cliente)
+  public function create()
   {
-    $usuarios = User::get();
-    $clientes = Clientes::get();
-      return view('projects.addproject',compact ('clientes', 'usuarios'));
+    $proyecto = [];
+    $modulos = [];
+    $clientes = Clientes::all();
+
+    return view('projects.addproject', compact('modulos', 'clientes'));
   }
 
   //Mostrar Clientes
   public function show()
   {
-    $proyectos = Proyectos::get();
+    $proyectos = Proyectos::latest('date_init')->get();
     return view('projects.showprojects', compact('proyectos'));
   }
-//Guardar cliente
+
+  //Guardar cliente
   public function store(Request $request)
   {
-
+    //dd($request->all(),$request->input('module')[1], json_decode($request->input('module')[1], true));
     $this->validate($request, [
       'title' => 'required',
-      'client_id' => 'required',
-      'responsible_user_id' => 'required',
       'date_init' => 'required',
       'date_end' => 'required',
       'description' => 'required'
-
     ]);
+
+    if (!$request->has('module')) {
+      return response()->json(false, 422);
+    }
+
     $proyecto = New Proyectos;
     $proyecto->title = request()->title;
-    $proyecto->client_id = request()->client_id;
-    $proyecto->responsible_user_id = request()->responsible_user_id;
     $proyecto->date_init = request()->date_init;
     $proyecto->date_end = request()->date_end;
+    $proyecto->client_id = request()->client_id;
+    $proyecto->created_user_id = auth()->user()->id;
     $proyecto->description = request()->description;
     $proyecto->save();
-    return redirect('home');
+
+    $modulos = json_decode(request()->modulo, true);
+
+    foreach ($modulos as $modulo) {
+
+      DB::table('modules')->insert([
+        'project_id' => $proyecto->id,
+        'created_user_id' => auth()->user()->id,
+        'title' => $modulo['titulo'],
+        'created_at' => Carbon::now()
+      ]);
+
+    }
+
+    return response()->json(true);
   }
 
   public function edit(Proyectos $proyecto)
   {
-    $usuarios = User::get();
-    $clientes = Clientes::get();
-      return view('projects.editproject', compact('proyecto', 'clientes', 'usuarios'));
+    $modulos = [];
+    $clientes = Clientes::all();
+
+    return view('projects.editproject', compact('proyecto', 'modulos', 'clientes'));
   }
 
   public function update(Proyectos $proyecto, Request $request)
   {
+    // dd($request->all());
+    // $this->validate($request, [
+    // 'title' => 'required',
+    // 'date_init' => 'required',
+    // 'date_end' => 'required',
+    // 'description' => 'required'
+    // ]);
+    //
+    // $proyecto->title = request()->title;
+    // $proyecto->date_init = request()->date_init;
+    // $proyecto->date_end = request()->date_end;
+    // $proyecto->description = request()->description;
+    // $proyecto->update();
+    //
+    // return view('home');
 
     $this->validate($request, [
       'title' => 'required',
-      'client_id' => 'required',
-      'responsible_user_id' => 'required',
       'date_init' => 'required',
       'date_end' => 'required',
       'description' => 'required'
-
     ]);
+
+    if (!$request->has('modulo')) {
+      return response()->json(false, 422);
+    }
+
     $proyecto->title = request()->title;
-    $proyecto->client_id = request()->client_id;
-    $proyecto->responsible_user_id = request()->responsible_user_id;
     $proyecto->date_init = request()->date_init;
     $proyecto->date_end = request()->date_end;
+    $proyecto->client_id = request()->client_id;
+    $proyecto->created_user_id = auth()->user()->id;
     $proyecto->description = request()->description;
-    $proyecto->update();
+    $proyecto->updated_at = Carbon::now();
+    $proyecto->save();
 
-      return view('home');
+    $new_key_module = [];
+
+    $modulos = json_decode(request()->modulo, true);
+
+    foreach ($modulos as $modulo) {
+
+      // dd($modulo, $value);
+      if ($modulo['nuevo'] == "true") {
+        $id = DB::table('modules')->insertGetId([
+          'project_id' => $proyecto->id,
+          'created_user_id' => auth()->user()->id,
+          'title' => $modulo['titulo'],
+          'created_at' => Carbon::now()
+        ]);
+
+        array_push($new_key_module, $id);
+      }else{
+        DB::table('modules')
+          ->where('id',$modulo['id'])
+          ->update([
+            'title' => $modulo['titulo'],
+            'updated_at' => Carbon::now()
+          ]);
+
+          array_push($new_key_module, $modulo['id']);
+      }
+
+    }
+
+    /*
+      Si hay al menos un valor dentro de ese array, entonces se procede a eliminar los
+      modulos que ya no estan dentro del conjunto de arreglo (ciclo anterior.)
+    */
+    if (count($new_key_module) > 0) {
+      DB::table('modules')
+        ->whereNotIn('id', $new_key_module)
+        ->delete();
+    }
+
+    return response()->json(true);
   }
 
   public function destroy(Proyectos $proyecto)
   {
-      $proyecto->delete();
+    $proyecto->delete();
 
-      return redirect('home');
+    return redirect('home');
   }
 }

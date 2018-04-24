@@ -6,7 +6,7 @@
       <!-- Sidebar user panel (optional) -->
       <div class="user-panel">
         <div class="pull-left image">
-          <img src="/img/negrito.png" class="img-circle" alt="User Image">
+          <img src="/img/loguito.png" class="img-circle" alt="User Image">
         </div>
         <div class="pull-left info">
           <p>{{ Auth::user()->name }}</p>
@@ -22,21 +22,21 @@
         <li class="active"><a href=""><i class="fa fa-link"></i> <span>Principal</span></a></li>
       </ul>
       <ul class="sidebar-menu" data-widget="tree">
-        <li class="header">Usuarios</li>
+        <li class="header"><i class="fa fa-user"></i> Usuarios</li>
         <!-- Optionally, you can add icons to the links -->
-        <li><a href="{{ route('register') }}"><i class="fa fa-link"></i> <span>Registrar Usuario</span></a></li>
+        <li><a href="{{ route('register') }}"><span>Registrar Usuario</span></a></li>
       </ul>
       <ul class="sidebar-menu" data-widget="tree">
-        <li class="header">CLIENTES</li>
+        <li class="header"><i class="fa fa-users"></i> CLIENTES</li>
         <!-- Optionally, you can add icons to the links -->
-        <li><a href="{{ route('CrearCliente') }}"><i class="fa fa-link"></i> <span>Agregar cliente</span></a></li>
-        <li><a href="{{ route('MostrarClientes') }}"><i class="fa fa-link"></i> <span>Ver clientes</span></a></li>
+        <li><a href="{{ route('CrearCliente') }}"><span>Agregar cliente</span></a></li>
+        <li><a href="{{ route('MostrarClientes') }}">Ver clientes</span></a></li>
       </ul>
       <ul class="sidebar-menu" data-widget="tree">
-        <li class="header">PROYECTOS</li>
+        <li class="header"><i class="fa fa-tasks"></i> PROYECTOS</li>
         <!-- Optionally, you can add icons to the links -->
-        <li><a href="{{ route('CrearProyecto') }}"><i class="fa fa-link"></i> <span>Crear proyecto</span></a></li>
-        <li><a href="{{ route('MostrarProyectos') }}"><i class="fa fa-link"></i> <span>Ver proyectos</span></a></li>
+        <li><a href="{{ route('CrearProyecto') }}"><span>Crear proyecto</span></a></li>
+        <li><a href="{{ route('MostrarProyectos') }}"><span>Ver proyectos</span></a></li>
       </ul>
       <ul class="sidebar-menu" data-widget="tree">
         <li class="header">TAREAS ?</li>

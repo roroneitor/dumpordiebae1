@@ -15,12 +15,12 @@ class CreateClientsTable extends Migration
     {
         Schema::create('clients', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('id_number', 12)->unique();
+            $table->string('id_number', 12);
             $table->string('business_name')->unique();
-            $table->string('email')->unique();
+            $table->string('email');
             $table->integer('country_id')->unsigned();
             $table->integer('state_id')->unsigned();
-            $table->bigInteger('phone')->unsigned()->unique();
+            $table->string('phone');
             $table->integer('created_user_id')->unsigned();
             $table->text('description');
             $table->timestamps();
