@@ -27,7 +27,6 @@
 <select type="text" class="form-control select2"  id="state_id" name="state_id">
   <?php $__currentLoopData = $states; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $estado): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
 <option  value="<?php echo e($estado->id); ?>" <?php echo e(isset($cliente) ? ($cliente->state_id == $estado->id ? 'selected': '') : ''); ?>><?php echo e($estado->name); ?></option>
-
 <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
 </select>
 </div>

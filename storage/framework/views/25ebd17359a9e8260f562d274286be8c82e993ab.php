@@ -30,8 +30,11 @@
               <td><?php echo e($cliente->id_number); ?></td>
               <td><?php echo e($cliente->email); ?></td>
               <td><?php echo e($cliente->phone); ?></td>
-              <td><?php echo e($cliente->country_id); ?></td>
-              <td><?php echo e($cliente->state_id); ?></td>
+              <!-- Para conseguir el nombre del país, buscamos el país con ese ID en la base de datos, le restamos 1 (porque los array empiezan desde 0 y los códigos desde 1) y agarramos el campo del nombre -->
+              <td value="$cliente->country_id"><?php echo e($country[$cliente->country_id-1]->name); ?></td>
+              <!-- Lo mismo para los estados -->
+              <td value="$cliente->state_id"><?php echo e($states[$cliente->state_id-1]->name); ?></td>
+              <!-- Los value se dejan igual porque el valor del ID no cambia, solo quieres mostrar el nombre como etiqueta -->
               <td>
 
                 <form action="<?php echo e(route('EliminarCliente', $cliente->id)); ?>" method="POST">
@@ -70,11 +73,14 @@
 <?php $__env->stopSection(); ?>
 <?php $__env->startSection('scripts'); ?>
 <script type="text/javascript">
+//Aqui puedes poner un modal para que se vea más bonito
     $('.btn-delete').on('click', function(e) {
         if(confirm('¿Está seguro de borrar este cliente?')) {
             $(this).parents('form:first').submit();
         }
     });
+
+    //Este javascript busca hacer cambios a #country_id y #state_id pero no hay objetos con ese ID??
     $(document).ready(function(){
       $("#country_id").change(function(event){
 

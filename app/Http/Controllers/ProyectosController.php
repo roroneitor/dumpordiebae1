@@ -65,7 +65,6 @@ class ProyectosController extends Controller
       'description' => 'required'
 
     ]);
-    $proyecto = New Proyectos;
     $proyecto->title = request()->title;
     $proyecto->client_id = request()->client_id;
     $proyecto->responsible_user_id = request()->responsible_user_id;

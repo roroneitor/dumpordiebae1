@@ -6,7 +6,7 @@
       <!-- Sidebar user panel (optional) -->
       <div class="user-panel">
         <div class="pull-left image">
-          <img src="/img/loguito.png" class="img-circle" alt="User Image">
+          <img src="/img/negrito.png" class="img-circle" alt="User Image">
         </div>
         <div class="pull-left info">
           <p><?php echo e(Auth::user()->name); ?></p>
