@@ -20,11 +20,11 @@
               <svg id="gantt-2"></svg>
             </div>
             <div class="btn-group mt-1 mx-auto" role="group">
-              <button type="button" class="btn btn-sm btn-secondary">Quarter Day</button>
-              <button type="button" class="btn btn-sm btn-secondary">Half Day</button>
-              <button type="button" class="btn btn-sm btn-secondary">Day</button>
-              <button type="button" class="btn btn-sm btn-secondary active">Week</button>
-              <button type="button" class="btn btn-sm btn-secondary">Month</button>
+              <button type="button" class="btn btn-sm btn-secondary">Cuarto de día</button>
+              <button type="button" class="btn btn-sm btn-secondary">Medio día</button>
+              <button type="button" class="btn btn-sm btn-secondary">Día</button>
+              <button type="button" class="btn btn-sm btn-secondary active">Semana</button>
+              <button type="button" class="btn btn-sm btn-secondary">Mes</button>
             </div>
              <div class="gantt-container" style="overflow:scroll; box-sizing: inherit; display: block;">
                   <svg id="gantt-3"></svg>

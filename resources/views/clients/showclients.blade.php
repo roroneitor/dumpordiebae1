@@ -42,9 +42,10 @@
                 <form action="{{ route('EliminarCliente', $cliente->id) }}" method="POST">
                     {{ method_field('DELETE') }}
                     {{ csrf_field() }}
-                    <a href="" class="btn btn-xs btn-success">ver</a>
-                    <a href="{{ route('EditarCliente', $cliente->id) }}" class="btn btn-xs btn-primary">Editar</a>
-                    <button type="button" class="btn-delete btn-danger btn btn-xs">Eliminar</button>
+                    <a href="" class="btn btn-xs btn-success"><i class="glyphicon glyphicon-eye-open"></i></a>
+
+                    <a href="{{ route('EditarCliente', $cliente->id) }}" class="btn btn-xs btn-primary"><i class="glyphicon glyphicon-pencil"></i></a>
+                    <button type="button" class="btn-delete btn-danger btn btn-xs"><i class="glyphicon glyphicon-trash"></i></button>
                 </form>
               </td>
 
