@@ -1,15 +1,13 @@
-@extends('layouts.master')
+<?php $__env->startSection('hojasdeestilo'); ?>
+<link rel="stylesheet" href="<?php echo e(asset('gantt/css/frappe-gantt.css')); ?>">
+<?php $__env->stopSection(); ?>
 
-@section('hojasdeestilo')
-<link rel="stylesheet" href="{{asset('gantt/css/frappe-gantt.css')}}">
-@endsection
-
-@section('content')
+<?php $__env->startSection('content'); ?>
   <div class="row">
     <div class="col-xs-12">
       <div class="box">
         <div class="box-header">
-          <h3 class="box-title">{{$proyecto->title}}</h3>
+          <h3 class="box-title"><?php echo e($proyecto->title); ?></h3>
         </div>
         <!-- /.box-header -->
         <div class="box-body">
@@ -30,28 +28,28 @@
       </div>
     </div>
   </div>
-@endsection
+<?php $__env->stopSection(); ?>
 
-@section('scripts')
-<script src="{{asset('gantt/js/moment.min.js')}}"></script>
-<script src="{{asset('gantt/js/snap.svg-min.js')}}"></script>
-<script src="{{asset('gantt/js/frappe-gantt.min.js')}}"></script>
+<?php $__env->startSection('scripts'); ?>
+<script src="<?php echo e(asset('gantt/js/moment.min.js')); ?>"></script>
+<script src="<?php echo e(asset('gantt/js/snap.svg-min.js')); ?>"></script>
+<script src="<?php echo e(asset('gantt/js/frappe-gantt.min.js')); ?>"></script>
 <script>
 var tasks = [
-@foreach ($proyecto->modulos as $modulo)
-@foreach ($modulo->tareas as $task)
+<?php $__currentLoopData = $proyecto->modulos; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $modulo): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+<?php $__currentLoopData = $modulo->tareas; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $task): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
  {
-    id: '{{$task->id}}',
-    name: '{{$task->description}}',
-    start: '{{date("Y-m-d", strtotime($task->date_init))}}',
-    end: '{{date("Y-m-d", strtotime($task->date_end))}}',
-    progress: {{$task->status_id}},
-    module: '{{$task->modulo->title}}',
-    priority: '{{$task->prioridad->name}}',
-    assigned_user: '{{$task->usuario->name}}',
+    id: '<?php echo e($task->id); ?>',
+    name: '<?php echo e($task->description); ?>',
+    start: '<?php echo e(date("Y-m-d", strtotime($task->date_init))); ?>',
+    end: '<?php echo e(date("Y-m-d", strtotime($task->date_end))); ?>',
+    progress: <?php echo e($task->status_id); ?>,
+    module: '<?php echo e($task->modulo->title); ?>',
+    priority: '<?php echo e($task->prioridad->name); ?>',
+    assigned_user: '<?php echo e($task->usuario->name); ?>',
  },
-@endforeach
-@endforeach
+<?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+<?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
 ]
 
 // change view mode example
@@ -99,4 +97,6 @@ var gantt3 = new Gantt("#gantt-3", tasks, {
 });
 
 </script>
-@endsection
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('layouts.master', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

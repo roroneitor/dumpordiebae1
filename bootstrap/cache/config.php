@@ -168,7 +168,7 @@
       'file' => 
       array (
         'driver' => 'file',
-        'path' => 'C:\\Users\\navar\\Desktop\\poteito\\dumpordiebae1\\storage\\framework/cache/data',
+        'path' => 'C:\\Users\\Isidro\\github\\dumpordiebae1\\storage\\framework/cache/data',
       ),
       'memcached' => 
       array (
@@ -273,12 +273,12 @@
       'local' => 
       array (
         'driver' => 'local',
-        'root' => 'C:\\Users\\navar\\Desktop\\poteito\\dumpordiebae1\\storage\\app',
+        'root' => 'C:\\Users\\Isidro\\github\\dumpordiebae1\\storage\\app',
       ),
       'public' => 
       array (
         'driver' => 'local',
-        'root' => 'C:\\Users\\navar\\Desktop\\poteito\\dumpordiebae1\\storage\\app/public',
+        'root' => 'C:\\Users\\Isidro\\github\\dumpordiebae1\\storage\\app/public',
         'url' => 'http://localhost/storage',
         'visibility' => 'public',
       ),
@@ -323,13 +323,13 @@
       'single' => 
       array (
         'driver' => 'single',
-        'path' => 'C:\\Users\\navar\\Desktop\\poteito\\dumpordiebae1\\storage\\logs/laravel.log',
+        'path' => 'C:\\Users\\Isidro\\github\\dumpordiebae1\\storage\\logs/laravel.log',
         'level' => 'debug',
       ),
       'daily' => 
       array (
         'driver' => 'daily',
-        'path' => 'C:\\Users\\navar\\Desktop\\poteito\\dumpordiebae1\\storage\\logs/laravel.log',
+        'path' => 'C:\\Users\\Isidro\\github\\dumpordiebae1\\storage\\logs/laravel.log',
         'level' => 'debug',
         'days' => 7,
       ),
@@ -381,7 +381,7 @@
       'theme' => 'default',
       'paths' => 
       array (
-        0 => 'C:\\Users\\navar\\Desktop\\poteito\\dumpordiebae1\\resources\\views/vendor/mail',
+        0 => 'C:\\Users\\Isidro\\github\\dumpordiebae1\\resources\\views/vendor/mail',
       ),
     ),
   ),
@@ -462,7 +462,7 @@
     'lifetime' => '120',
     'expire_on_close' => false,
     'encrypt' => false,
-    'files' => 'C:\\Users\\navar\\Desktop\\poteito\\dumpordiebae1\\storage\\framework/sessions',
+    'files' => 'C:\\Users\\Isidro\\github\\dumpordiebae1\\storage\\framework/sessions',
     'connection' => NULL,
     'table' => 'sessions',
     'store' => NULL,
@@ -482,9 +482,9 @@
   array (
     'paths' => 
     array (
-      0 => 'C:\\Users\\navar\\Desktop\\poteito\\dumpordiebae1\\resources\\views',
+      0 => 'C:\\Users\\Isidro\\github\\dumpordiebae1\\resources\\views',
     ),
-    'compiled' => 'C:\\Users\\navar\\Desktop\\poteito\\dumpordiebae1\\storage\\framework\\views',
+    'compiled' => 'C:\\Users\\Isidro\\github\\dumpordiebae1\\storage\\framework\\views',
   ),
   'trustedproxy' => 
   array (

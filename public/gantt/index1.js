@@ -1,31 +1,20 @@
-var names = [
-    ["Rediseñar Pagina", [0, 7]],
-    ["Write new content", [1, 4]],
-    ["Apply new styles", [3, 6]],
-    ["Review", [7, 7]],
-    ["Deploy", [8, 9]],
-    ["Go Live!", [10, 10]]
-];
-
-var tasks = names.map(function(name, i) {
-    var today = new Date();
-    var start = new Date(today.getFullYear(), today.getMonth(), today.getDate());
-    var end = new Date(today.getFullYear(), today.getMonth(), today.getDate());
-    start.setDate(today.getDate() + name[1][0]);
-    end.setDate(today.getDate() + name[1][1]);
-    return {
-        start: start,
-        end: end,
-        name: name[0],
-        id: "Task " + i,
-        progress: parseInt(Math.random() * 100, 10),
-        potato: "kek"
-    }
-});
-tasks[1].dependencies = "Task 0"
-tasks[2].dependencies = "Task 1"
-tasks[3].dependencies = "Task 2"
-tasks[5].dependencies = "Task 4"
+var tasks = [
+     @dd($proyecto->modulos)
+@foreach ($modulo as $proyecto->modulos)
+@foreach ($task as $modulo->tareas)
+  {
+    id: '{{$task->id}}',
+    name: '{{$task->description}}',
+    start: '{{date("Y-M-d", $task->date_init)}}',
+    end: '{{date("Y-M-d", $task->date_end)}}',
+    progress: {{$task->status_id}},
+    module: {{$task->module_id}},
+    priority: {{$task->priority_id}},
+    assigned_user: {{$task->assigned_user_id}},
+  },
+@endforeach
+@endforeach
+]
 
 // change view mode example
 var gantt2 = new Gantt("#gantt-2", tasks, {
@@ -34,9 +23,11 @@ var gantt2 = new Gantt("#gantt-2", tasks, {
       return `
         <div class="details-container">
           <h5>${task.name}</h5>
+          <p>Modulo: ${task.module}</p>
+          <p>Prioridad: ${task.priority}</p>
+          <p>Usuario Responsable: ${task.assigned_user}</p>
           <p>Final esperado: ${end_date}</p>
           <p>${task.progress}% completado!</p>
-          <p>Potato: ${task.potato}</p>
         </div>
       `;
     }

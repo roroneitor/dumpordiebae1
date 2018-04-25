@@ -39,16 +39,13 @@
       </div>
       <div class="row">
         <!-- /.col -->
-        <div class="col-xs-4">
+        <div class="col-xs-5 text-center">
           <button type="submit" class="btn btn-primary btn-block btn-flat">Iniciar sesión</button>
         </div>
         <!-- /.col -->
       </div>
     </form>
-    <!-- /.social-auth-links -->
 
-    <a href="">Olvidé mi contraseña</a><br>
-    <a href="<?php echo e(route('register')); ?>" class="text-center">Registrar usuario</a>
 
   </div>
   <!-- /.login-box-body -->
