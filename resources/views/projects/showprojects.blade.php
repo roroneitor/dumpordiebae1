@@ -31,7 +31,7 @@
                       <button type="button" name="button" class="btn btn-xs btn-default addTask" data-title="{{$proyecto->title}}" data-id="{{ $proyecto->id }}">
                         <i class="glyphicon glyphicon-tasks"></i>
                       </button>
-                      <a href="" class="btn btn-xs btn-success">
+                      <a href="{{ route('VerProyecto', $proyecto) }}" class="btn btn-xs btn-success">
                         <i class="glyphicon glyphicon-eye-open"></i>
                       </a>
                       <a href="{{ route('EditarProyecto', $proyecto->id) }}" class="btn btn-xs btn-primary">

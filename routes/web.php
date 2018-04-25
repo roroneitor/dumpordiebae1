@@ -37,4 +37,5 @@ Route::group(['middleware' => 'auth'], function () {
   Route::delete('/proyecto/{proyecto}', 'ProyectosController@destroy')->name('EliminarProyecto');
   Route::get('/proyecto/{proyecto}/editar', 'ProyectosController@edit')->name('EditarProyecto');
   Route::put('/proyecto/{proyecto}', 'ProyectosController@update')->name('ActualizarProyecto');
+  Route::get('/proyecto/{proyecto}', 'ProyectosController@view')->name('VerProyecto');
 });

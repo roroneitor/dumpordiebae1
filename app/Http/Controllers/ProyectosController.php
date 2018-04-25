@@ -162,4 +162,9 @@ class ProyectosController extends Controller
 
     return redirect('home');
   }
+
+  public function view(Proyectos $proyecto)
+  {
+       return view('projects.viewproject', compact('proyecto'));
+  }
 }

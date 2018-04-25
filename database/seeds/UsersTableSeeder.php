@@ -22,5 +22,16 @@ class UsersTableSeeder extends Seeder
           'remember_token' => str_random(10),
           'created_at' => Carbon::now()
       ]);
+
+      DB::table('users')->insert([
+          'name' => 'Isidro Gonzalez',
+          'email' => 'isidro@isidro.com',
+          'phone' => '04141990880',
+          'country_id' => 237,
+          'state_id' => 4036,
+          'password' => bcrypt('123321'), // secret
+          'remember_token' => str_random(10),
+          'created_at' => Carbon::now()
+      ]);
     }
 }
