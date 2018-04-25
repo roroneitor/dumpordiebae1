@@ -15,7 +15,7 @@
   @if (isset($proyecto))
     <li class="list-group-item {{ $proyecto->modulos->count()==0 ?:'hide' }}"><i class="glyphicon glyphicon-flag"></i> No hay modulos agregados</li>
   @else
-    <li class="list-group-item"><i class="glyphicon glyphicon-flag"></i> No hay modulos agregados</li>
+    <li class="list-group-item empty"><i class="glyphicon glyphicon-flag"></i> No hay modulos agregados</li>
   @endif
   <li class="list-group-item clone hide">
     <span></span>

@@ -13,7 +13,7 @@ $(function(){
           if ($.trim(titulo) != '') {
             var liActivo = '';
 
-            $('.modulosLista li:not(.hide)').each(function(index, el) {
+            $('.modulosLista li:not(.hide, .empty)').each(function(index, el) {
               var texto = $(el).find('span:first').html() .toLowerCase();
 
               if (texto == titulo.toLowerCase()) {
