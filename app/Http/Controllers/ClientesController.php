@@ -37,7 +37,7 @@ class ClientesController extends Controller
       'phone' => 'required',
       'country_id' => 'required',
       'state_id' => 'required',
-      'description' => 'required'
+      'description' => 'required|string|max:144',
     ]);
     $Cliente = New Clientes;
     $Cliente->business_name = request()->business_name;
@@ -70,7 +70,7 @@ class ClientesController extends Controller
       'phone' => 'required',
       'country_id' => 'required',
       'state_id' => 'required',
-      'description' => 'required'
+      'description' => 'required|string|max:144',
     ]);
     $cliente->business_name = request()->business_name;
     $cliente->id_number = request()->id_number;

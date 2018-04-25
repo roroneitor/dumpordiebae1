@@ -36,7 +36,7 @@ class ProyectosController extends Controller
       'title' => 'required',
       'date_init' => 'required',
       'date_end' => 'required',
-      'description' => 'required'
+      'description' => 'required|string|max:144',
     ]);
 
     if (!$request->has('module')) {
@@ -98,7 +98,7 @@ class ProyectosController extends Controller
       'title' => 'required',
       'date_init' => 'required',
       'date_end' => 'required',
-      'description' => 'required'
+      'description' => 'required|string|max:144',
     ]);
 
     if (!$request->has('modulo')) {

@@ -37,13 +37,11 @@
             </span>
         @endif
       </div>
-      <div class="row">
-        <!-- /.col -->
-        <div class="col-xs-5 text-center">
-          <button type="submit" class="btn btn-primary btn-block btn-flat">Iniciar sesión</button>
+      <div class="form-row text-center">
+        <div class="col-12">
+            <button type="submit" class="btn btn-primary">Iniciar sesión</button>
         </div>
-        <!-- /.col -->
-      </div>
+     </div>
     </form>
 
 
