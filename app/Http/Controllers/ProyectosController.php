@@ -39,7 +39,7 @@ class ProyectosController extends Controller
       'description' => 'required|string|max:144',
     ]);
 
-    if (!$request->has('module')) {
+    if (!$request->has('modulo')) {
       return response()->json(false, 422);
     }
 
