@@ -17,7 +17,7 @@
 
   <div class="register-box-body">
 
-    <p class="login-box-msg"><b>Registrar un usuario nuevo</b></p>
+    <p class="login-box-msg"><b>REGISTRAR UN USUARIO NUEVO</b></p>
 
     <form action="<?php echo e(route('register')); ?>" method="post">
       <?php echo csrf_field(); ?>
@@ -56,14 +56,11 @@
         <input id="password-confirm" type="password" class="form-control" name="password_confirmation" placeholder="Confirmar contraseña" required>
         <span class="glyphicon glyphicon-log-in form-control-feedback"></span>
       </div>
-      <div class="row">
-
-        <!-- /.col -->
-        <div class="col-xs-8">
-          <button type="submit" class="btn btn-primary btn-block btn-flat">Registrar usuario</button>
+      <div class="form-row text-center">
+        <div class="col-12">
+            <button type="submit" class="btn btn-primary">Registrar usuario</button>
         </div>
-        <!-- /.col -->
-      </div>
+     </div>
     </form>
   </div>
   <!-- /.form-box -->
