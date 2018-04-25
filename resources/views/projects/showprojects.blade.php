@@ -12,8 +12,8 @@
           <table id="tabla1" class="table table-bordered table-striped">
             <thead>
               <tr>
-                <th width="30%">Titulo</th>
-                <th width="8%">Fecha Inicial</th>
+                <th width="29%">Titulo</th>
+                <th width="9%">Fecha Inicial</th>
                 <th width="8%">Fecha Final</th>
                 <th width="30%">Descripción</th>
                 <th width="9%">Acción</th>
