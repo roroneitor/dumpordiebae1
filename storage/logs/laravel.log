@@ -17,9 +17,9 @@
 #14 C:\\Users\\Isidro\\github\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(122): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
 #15 C:\\Users\\Isidro\\github\\dumpordiebae1\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
 #16 {main}
-"} 
+"}
 [2018-04-21 14:48:35] local.ERROR: SQLSTATE[HY000] [1049] Unknown database 'softronix' {"exception":"[object] (PDOException(code: 1049): SQLSTATE[HY000] [1049] Unknown database 'softronix' at C:\\Users\\Isidro\\github\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\Connector.php:68)
-[stacktrace]
+[stacktrace] 
 #0 C:\\Users\\Isidro\\github\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\Connector.php(68): PDO->__construct('mysql:host=127....', 'root', '', Array)
 #1 C:\\Users\\Isidro\\github\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\Connector.php(44): Illuminate\\Database\\Connectors\\Connector->createPdoConnection('mysql:host=127....', 'root', '', Array)
 #2 C:\\Users\\Isidro\\github\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\MySqlConnector.php(24): Illuminate\\Database\\Connectors\\Connector->createConnection('mysql:host=127....', Array, Array)
@@ -97,7 +97,7 @@
 #74 C:\\Users\\Isidro\\github\\dumpordiebae1\\public\\index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #75 C:\\Users\\Isidro\\github\\dumpordiebae1\\server.php(21): require_once('C:\\\\Users\\\\Isidro...')
 #76 {main}
-"} 
+"}
 [2018-04-21 14:48:35] local.ERROR: SQLSTATE[HY000] [1049] Unknown database 'softronix' (SQL: select * from `users` where `email` = isidro@gmail.com limit 1) {"exception":"[object] (Illuminate\\Database\\QueryException(code: 1049): SQLSTATE[HY000] [1049] Unknown database 'softronix' (SQL: select * from `users` where `email` = isidro@gmail.com limit 1) at C:\\Users\\Isidro\\github\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:664, PDOException(code: 1049): SQLSTATE[HY000] [1049] Unknown database 'softronix' at C:\\Users\\Isidro\\github\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\Connector.php:68)
 [stacktrace]
 #0 C:\\Users\\Isidro\\github\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(624): Illuminate\\Database\\Connection->runQueryCallback('select * from `...', Array, Object(Closure))
@@ -167,7 +167,7 @@
 #64 C:\\Users\\Isidro\\github\\dumpordiebae1\\public\\index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #65 C:\\Users\\Isidro\\github\\dumpordiebae1\\server.php(21): require_once('C:\\\\Users\\\\Isidro...')
 #66 {main}
-"} 
+"}
 [2018-04-21 16:06:13] local.ERROR: SQLSTATE[HY000] [1049] Unknown database 'softronix' {"exception":"[object] (PDOException(code: 1049): SQLSTATE[HY000] [1049] Unknown database 'softronix' at C:\\Users\\Isidro\\github\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\Connector.php:68)
 [stacktrace]
 #0 C:\\Users\\Isidro\\github\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\Connector.php(68): PDO->__construct('mysql:host=127....', 'root', '', Array)
@@ -247,7 +247,7 @@
 #74 C:\\Users\\Isidro\\github\\dumpordiebae1\\public\\index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #75 C:\\Users\\Isidro\\github\\dumpordiebae1\\server.php(21): require_once('C:\\\\Users\\\\Isidro...')
 #76 {main}
-"} 
+"}
 [2018-04-21 16:06:13] local.ERROR: SQLSTATE[HY000] [1049] Unknown database 'softronix' (SQL: select * from `users` where `email` = asdasd@asdasd.vghgfh limit 1) {"exception":"[object] (Illuminate\\Database\\QueryException(code: 1049): SQLSTATE[HY000] [1049] Unknown database 'softronix' (SQL: select * from `users` where `email` = asdasd@asdasd.vghgfh limit 1) at C:\\Users\\Isidro\\github\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:664, PDOException(code: 1049): SQLSTATE[HY000] [1049] Unknown database 'softronix' at C:\\Users\\Isidro\\github\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\Connector.php:68)
 [stacktrace]
 #0 C:\\Users\\Isidro\\github\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(624): Illuminate\\Database\\Connection->runQueryCallback('select * from `...', Array, Object(Closure))
@@ -317,7 +317,7 @@
 #64 C:\\Users\\Isidro\\github\\dumpordiebae1\\public\\index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #65 C:\\Users\\Isidro\\github\\dumpordiebae1\\server.php(21): require_once('C:\\\\Users\\\\Isidro...')
 #66 {main}
-"} 
+"}
 [2018-04-22 00:25:35] local.ERROR: Parse error: syntax error, unexpected 'use' (T_USE) {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Parse error: syntax error, unexpected 'use' (T_USE) at C:\\Users\
 avar\\Desktop\\poteito\\dumpordiebae1\\app\\Http\\Controllers\\ProyectosController.php:5)
 [stacktrace]
@@ -396,7 +396,7 @@ avar\\Desktop\\poteito\\dumpordiebae1\\public\\index.php(55): Illuminate\\Founda
 avar\\Desktop\\poteito\\dumpordiebae1\\server.php(21): require_once('C:\\\\Users\\\
 avar\\\\...')
 #37 {main}
-"} 
+"}
 [2018-04-22 00:26:54] local.ERROR: Undefined variable: business_name {"userId":1,"email":"rod.navarret@gmail.com","exception":"[object] (ErrorException(code: 0): Undefined variable: business_name at C:\\Users\
 avar\\Desktop\\poteito\\dumpordiebae1\\app\\Http\\Controllers\\ProyectosController.php:13)
 [stacktrace]
@@ -508,7 +508,7 @@ avar\\Desktop\\poteito\\dumpordiebae1\\public\\index.php(55): Illuminate\\Founda
 avar\\Desktop\\poteito\\dumpordiebae1\\server.php(21): require_once('C:\\\\Users\\\
 avar\\\\...')
 #53 {main}
-"} 
+"}
 [2018-04-22 00:27:12] local.ERROR: Use of undefined constant business_name - assumed 'business_name' (this will throw an Error in a future version of PHP) {"userId":1,"email":"rod.navarret@gmail.com","exception":"[object] (ErrorException(code: 0): Use of undefined constant business_name - assumed 'business_name' (this will throw an Error in a future version of PHP) at C:\\Users\
 avar\\Desktop\\poteito\\dumpordiebae1\\app\\Http\\Controllers\\ProyectosController.php:13)
 [stacktrace]
@@ -620,7 +620,7 @@ avar\\Desktop\\poteito\\dumpordiebae1\\public\\index.php(55): Illuminate\\Founda
 avar\\Desktop\\poteito\\dumpordiebae1\\server.php(21): require_once('C:\\\\Users\\\
 avar\\\\...')
 #53 {main}
-"} 
+"}
 [2018-04-22 00:27:28] local.ERROR: Undefined variable: clientes {"userId":1,"email":"rod.navarret@gmail.com","exception":"[object] (ErrorException(code: 0): Undefined variable: clientes at C:\\Users\
 avar\\Desktop\\poteito\\dumpordiebae1\\app\\Http\\Controllers\\ProyectosController.php:13)
 [stacktrace]
@@ -732,7 +732,7 @@ avar\\Desktop\\poteito\\dumpordiebae1\\public\\index.php(55): Illuminate\\Founda
 avar\\Desktop\\poteito\\dumpordiebae1\\server.php(21): require_once('C:\\\\Users\\\
 avar\\\\...')
 #53 {main}
-"} 
+"}
 [2018-04-22 00:28:33] local.ERROR: Undefined variable: clientes (View: C:\Users\navar\Desktop\poteito\dumpordiebae1\resources\views\projects\_projectform.blade.php) (View: C:\Users\navar\Desktop\poteito\dumpordiebae1\resources\views\projects\_projectform.blade.php) {"userId":1,"email":"rod.navarret@gmail.com","exception":"[object] (ErrorException(code: 0): Undefined variable: clientes (View: C:\\Users\
 avar\\Desktop\\poteito\\dumpordiebae1\esources\\views\\projects\\_projectform.blade.php) (View: C:\\Users\
 avar\\Desktop\\poteito\\dumpordiebae1\esources\\views\\projects\\_projectform.blade.php) at C:\\Users\
@@ -857,7 +857,7 @@ avar\\Desktop\\poteito\\dumpordiebae1\\public\\index.php(55): Illuminate\\Founda
 avar\\Desktop\\poteito\\dumpordiebae1\\server.php(21): require_once('C:\\\\Users\\\
 avar\\\\...')
 #56 {main}
-"} 
+"}
 [2018-04-22 00:28:46] local.ERROR: Undefined variable: clientes (View: C:\Users\navar\Desktop\poteito\dumpordiebae1\resources\views\projects\_projectform.blade.php) (View: C:\Users\navar\Desktop\poteito\dumpordiebae1\resources\views\projects\_projectform.blade.php) {"userId":1,"email":"rod.navarret@gmail.com","exception":"[object] (ErrorException(code: 0): Undefined variable: clientes (View: C:\\Users\
 avar\\Desktop\\poteito\\dumpordiebae1\esources\\views\\projects\\_projectform.blade.php) (View: C:\\Users\
 avar\\Desktop\\poteito\\dumpordiebae1\esources\\views\\projects\\_projectform.blade.php) at C:\\Users\
@@ -982,7 +982,7 @@ avar\\Desktop\\poteito\\dumpordiebae1\\public\\index.php(55): Illuminate\\Founda
 avar\\Desktop\\poteito\\dumpordiebae1\\server.php(21): require_once('C:\\\\Users\\\
 avar\\\\...')
 #56 {main}
-"} 
+"}
 [2018-04-22 00:38:50] local.ERROR: Class 'App\Http\Controllers\User' not found {"userId":1,"email":"rod.navarret@gmail.com","exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Class 'App\\Http\\Controllers\\User' not found at C:\\Users\
 avar\\Desktop\\poteito\\dumpordiebae1\\app\\Http\\Controllers\\ProyectosController.php:13)
 [stacktrace]
@@ -1091,7 +1091,7 @@ avar\\Desktop\\poteito\\dumpordiebae1\\public\\index.php(55): Illuminate\\Founda
 avar\\Desktop\\poteito\\dumpordiebae1\\server.php(21): require_once('C:\\\\Users\\\
 avar\\\\...')
 #52 {main}
-"} 
+"}
 [2018-04-22 01:20:12] local.ERROR: Use of undefined constant id - assumed 'id' (this will throw an Error in a future version of PHP) (View: C:\Users\navar\Desktop\poteito\dumpordiebae1\resources\views\projects\showprojects.blade.php) {"userId":1,"email":"rod.navarret@gmail.com","exception":"[object] (ErrorException(code: 0): Use of undefined constant id - assumed 'id' (this will throw an Error in a future version of PHP) (View: C:\\Users\
 avar\\Desktop\\poteito\\dumpordiebae1\esources\\views\\projects\\showprojects.blade.php) at C:\\Users\
 avar\\Desktop\\poteito\\dumpordiebae1\\storage\\framework\\views\\5633856e2c9e2e86a77ab250d8f5b32d1de7f4e2.php:25, ErrorException(code: 0): Use of undefined constant id - assumed 'id' (this will throw an Error in a future version of PHP) at C:\\Users\
@@ -1213,7 +1213,7 @@ avar\\Desktop\\poteito\\dumpordiebae1\\public\\index.php(55): Illuminate\\Founda
 avar\\Desktop\\poteito\\dumpordiebae1\\server.php(21): require_once('C:\\\\Users\\\
 avar\\\\...')
 #56 {main}
-"} 
+"}
 [2018-04-22 01:20:26] local.ERROR: Undefined variable: clientes (View: C:\Users\navar\Desktop\poteito\dumpordiebae1\resources\views\projects\_projectform.blade.php) (View: C:\Users\navar\Desktop\poteito\dumpordiebae1\resources\views\projects\_projectform.blade.php) {"userId":1,"email":"rod.navarret@gmail.com","exception":"[object] (ErrorException(code: 0): Undefined variable: clientes (View: C:\\Users\
 avar\\Desktop\\poteito\\dumpordiebae1\esources\\views\\projects\\_projectform.blade.php) (View: C:\\Users\
 avar\\Desktop\\poteito\\dumpordiebae1\esources\\views\\projects\\_projectform.blade.php) at C:\\Users\
@@ -1338,7 +1338,7 @@ avar\\Desktop\\poteito\\dumpordiebae1\\public\\index.php(55): Illuminate\\Founda
 avar\\Desktop\\poteito\\dumpordiebae1\\server.php(21): require_once('C:\\\\Users\\\
 avar\\\\...')
 #56 {main}
-"} 
+"}
 [2018-04-22 01:23:53] local.ERROR: SQLSTATE[22007]: Invalid datetime format: 1366 Incorrect integer value: 'Pedro Juan' for column 'responsible_user_id' at row 1 (SQL: insert into `projects` (`title`, `date_init`, `date_end`, `description`, `responsible_user_id`, `client_id`, `updated_at`, `created_at`) values (TEST, 2018-12-02, 2018-02-22, ASD, Pedro Juan, Nokia Company, 2018-04-22 01:23:53, 2018-04-22 01:23:53)) {"userId":1,"email":"rod.navarret@gmail.com","exception":"[object] (Illuminate\\Database\\QueryException(code: 22007): SQLSTATE[22007]: Invalid datetime format: 1366 Incorrect integer value: 'Pedro Juan' for column 'responsible_user_id' at row 1 (SQL: insert into `projects` (`title`, `date_init`, `date_end`, `description`, `responsible_user_id`, `client_id`, `updated_at`, `created_at`) values (TEST, 2018-12-02, 2018-02-22, ASD, Pedro Juan, Nokia Company, 2018-04-22 01:23:53, 2018-04-22 01:23:53)) at C:\\Users\
 avar\\Desktop\\poteito\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:664, PDOException(code: 22007): SQLSTATE[22007]: Invalid datetime format: 1366 Incorrect integer value: 'Pedro Juan' for column 'responsible_user_id' at row 1 at C:\\Users\
 avar\\Desktop\\poteito\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:458)
@@ -1468,7 +1468,7 @@ avar\\Desktop\\poteito\\dumpordiebae1\\public\\index.php(55): Illuminate\\Founda
 avar\\Desktop\\poteito\\dumpordiebae1\\server.php(21): require_once('C:\\\\Users\\\
 avar\\\\...')
 #62 {main}
-"} 
+"}
 [2018-04-22 01:24:02] local.ERROR: SQLSTATE[22007]: Invalid datetime format: 1366 Incorrect integer value: 'Pedro Juan' for column 'responsible_user_id' at row 1 (SQL: insert into `projects` (`title`, `date_init`, `date_end`, `description`, `responsible_user_id`, `client_id`, `updated_at`, `created_at`) values (TEST, 2018-12-02, 2018-12-02, ASD, Pedro Juan, Nokia Company, 2018-04-22 01:24:02, 2018-04-22 01:24:02)) {"userId":1,"email":"rod.navarret@gmail.com","exception":"[object] (Illuminate\\Database\\QueryException(code: 22007): SQLSTATE[22007]: Invalid datetime format: 1366 Incorrect integer value: 'Pedro Juan' for column 'responsible_user_id' at row 1 (SQL: insert into `projects` (`title`, `date_init`, `date_end`, `description`, `responsible_user_id`, `client_id`, `updated_at`, `created_at`) values (TEST, 2018-12-02, 2018-12-02, ASD, Pedro Juan, Nokia Company, 2018-04-22 01:24:02, 2018-04-22 01:24:02)) at C:\\Users\
 avar\\Desktop\\poteito\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:664, PDOException(code: 22007): SQLSTATE[22007]: Invalid datetime format: 1366 Incorrect integer value: 'Pedro Juan' for column 'responsible_user_id' at row 1 at C:\\Users\
 avar\\Desktop\\poteito\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:458)
@@ -1598,7 +1598,7 @@ avar\\Desktop\\poteito\\dumpordiebae1\\public\\index.php(55): Illuminate\\Founda
 avar\\Desktop\\poteito\\dumpordiebae1\\server.php(21): require_once('C:\\\\Users\\\
 avar\\\\...')
 #62 {main}
-"} 
+"}
 [2018-04-22 01:24:18] local.ERROR: SQLSTATE[22007]: Invalid datetime format: 1366 Incorrect integer value: 'Pedro Juan' for column 'responsible_user_id' at row 1 (SQL: insert into `projects` (`title`, `date_init`, `date_end`, `description`, `responsible_user_id`, `client_id`, `updated_at`, `created_at`) values (TEST, 2018-01-01, 2018-02-02, ASD, Pedro Juan, Nokia Company, 2018-04-22 01:24:18, 2018-04-22 01:24:18)) {"userId":1,"email":"rod.navarret@gmail.com","exception":"[object] (Illuminate\\Database\\QueryException(code: 22007): SQLSTATE[22007]: Invalid datetime format: 1366 Incorrect integer value: 'Pedro Juan' for column 'responsible_user_id' at row 1 (SQL: insert into `projects` (`title`, `date_init`, `date_end`, `description`, `responsible_user_id`, `client_id`, `updated_at`, `created_at`) values (TEST, 2018-01-01, 2018-02-02, ASD, Pedro Juan, Nokia Company, 2018-04-22 01:24:18, 2018-04-22 01:24:18)) at C:\\Users\
 avar\\Desktop\\poteito\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:664, PDOException(code: 22007): SQLSTATE[22007]: Invalid datetime format: 1366 Incorrect integer value: 'Pedro Juan' for column 'responsible_user_id' at row 1 at C:\\Users\
 avar\\Desktop\\poteito\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:458)
@@ -1728,7 +1728,7 @@ avar\\Desktop\\poteito\\dumpordiebae1\\public\\index.php(55): Illuminate\\Founda
 avar\\Desktop\\poteito\\dumpordiebae1\\server.php(21): require_once('C:\\\\Users\\\
 avar\\\\...')
 #62 {main}
-"} 
+"}
 [2018-04-22 01:25:20] local.ERROR: SQLSTATE[22007]: Invalid datetime format: 1366 Incorrect integer value: 'Rodrigo' for column 'responsible_user_id' at row 1 (SQL: insert into `projects` (`title`, `date_init`, `date_end`, `description`, `responsible_user_id`, `client_id`, `updated_at`, `created_at`) values (TEST, 2018-02-22, 2018-02-23, TEST, Rodrigo, Samsung LTC, 2018-04-22 01:25:20, 2018-04-22 01:25:20)) {"userId":1,"email":"rod.navarret@gmail.com","exception":"[object] (Illuminate\\Database\\QueryException(code: 22007): SQLSTATE[22007]: Invalid datetime format: 1366 Incorrect integer value: 'Rodrigo' for column 'responsible_user_id' at row 1 (SQL: insert into `projects` (`title`, `date_init`, `date_end`, `description`, `responsible_user_id`, `client_id`, `updated_at`, `created_at`) values (TEST, 2018-02-22, 2018-02-23, TEST, Rodrigo, Samsung LTC, 2018-04-22 01:25:20, 2018-04-22 01:25:20)) at C:\\Users\
 avar\\Desktop\\poteito\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:664, PDOException(code: 22007): SQLSTATE[22007]: Invalid datetime format: 1366 Incorrect integer value: 'Rodrigo' for column 'responsible_user_id' at row 1 at C:\\Users\
 avar\\Desktop\\poteito\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:458)
@@ -1858,7 +1858,7 @@ avar\\Desktop\\poteito\\dumpordiebae1\\public\\index.php(55): Illuminate\\Founda
 avar\\Desktop\\poteito\\dumpordiebae1\\server.php(21): require_once('C:\\\\Users\\\
 avar\\\\...')
 #62 {main}
-"} 
+"}
 [2018-04-22 01:27:25] local.ERROR: SQLSTATE[22007]: Invalid datetime format: 1366 Incorrect integer value: 'Rodrigo' for column 'responsible_user_id' at row 1 (SQL: insert into `projects` (`title`, `date_init`, `date_end`, `description`, `responsible_user_id`, `client_id`, `updated_at`, `created_at`) values (TEST, 2018-12-02, 2018-12-02, ASD, Rodrigo, Samsung LTC 123456789, 2018-04-22 01:27:25, 2018-04-22 01:27:25)) {"userId":1,"email":"rod.navarret@gmail.com","exception":"[object] (Illuminate\\Database\\QueryException(code: 22007): SQLSTATE[22007]: Invalid datetime format: 1366 Incorrect integer value: 'Rodrigo' for column 'responsible_user_id' at row 1 (SQL: insert into `projects` (`title`, `date_init`, `date_end`, `description`, `responsible_user_id`, `client_id`, `updated_at`, `created_at`) values (TEST, 2018-12-02, 2018-12-02, ASD, Rodrigo, Samsung LTC 123456789, 2018-04-22 01:27:25, 2018-04-22 01:27:25)) at C:\\Users\
 avar\\Desktop\\poteito\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:664, PDOException(code: 22007): SQLSTATE[22007]: Invalid datetime format: 1366 Incorrect integer value: 'Rodrigo' for column 'responsible_user_id' at row 1 at C:\\Users\
 avar\\Desktop\\poteito\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:458)
@@ -1988,7 +1988,7 @@ avar\\Desktop\\poteito\\dumpordiebae1\\public\\index.php(55): Illuminate\\Founda
 avar\\Desktop\\poteito\\dumpordiebae1\\server.php(21): require_once('C:\\\\Users\\\
 avar\\\\...')
 #62 {main}
-"} 
+"}
 [2018-04-22 01:30:03] local.ERROR: SQLSTATE[22007]: Invalid datetime format: 1366 Incorrect integer value: 'Rodrigo Navarrete' for column 'responsible_user_id' at row 1 (SQL: insert into `projects` (`title`, `date_init`, `date_end`, `description`, `responsible_user_id`, `client_id`, `updated_at`, `created_at`) values (TEST, 2018-12-02, 2018-12-20, TEST, Rodrigo Navarrete, Softronix Company 26625149, 2018-04-22 01:30:03, 2018-04-22 01:30:03)) {"userId":1,"email":"navarrete.rodrigo@hotmail.com","exception":"[object] (Illuminate\\Database\\QueryException(code: 22007): SQLSTATE[22007]: Invalid datetime format: 1366 Incorrect integer value: 'Rodrigo Navarrete' for column 'responsible_user_id' at row 1 (SQL: insert into `projects` (`title`, `date_init`, `date_end`, `description`, `responsible_user_id`, `client_id`, `updated_at`, `created_at`) values (TEST, 2018-12-02, 2018-12-20, TEST, Rodrigo Navarrete, Softronix Company 26625149, 2018-04-22 01:30:03, 2018-04-22 01:30:03)) at C:\\Users\
 avar\\Desktop\\poteito\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:664, PDOException(code: 22007): SQLSTATE[22007]: Invalid datetime format: 1366 Incorrect integer value: 'Rodrigo Navarrete' for column 'responsible_user_id' at row 1 at C:\\Users\
 avar\\Desktop\\poteito\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:458)
@@ -2118,7 +2118,7 @@ avar\\Desktop\\poteito\\dumpordiebae1\\public\\index.php(55): Illuminate\\Founda
 avar\\Desktop\\poteito\\dumpordiebae1\\server.php(21): require_once('C:\\\\Users\\\
 avar\\\\...')
 #62 {main}
-"} 
+"}
 [2018-04-22 01:31:12] local.ERROR: SQLSTATE[22007]: Invalid datetime format: 1366 Incorrect integer value: 'Rodrigo Navarrete' for column 'responsible_user_id' at row 1 (SQL: insert into `projects` (`title`, `date_init`, `date_end`, `description`, `responsible_user_id`, `client_id`, `updated_at`, `created_at`) values (TEST, 2018-12-02, 2018-12-20, TEST, Rodrigo Navarrete, Softronix Company 26625149, 2018-04-22 01:31:12, 2018-04-22 01:31:12)) {"userId":1,"email":"navarrete.rodrigo@hotmail.com","exception":"[object] (Illuminate\\Database\\QueryException(code: 22007): SQLSTATE[22007]: Invalid datetime format: 1366 Incorrect integer value: 'Rodrigo Navarrete' for column 'responsible_user_id' at row 1 (SQL: insert into `projects` (`title`, `date_init`, `date_end`, `description`, `responsible_user_id`, `client_id`, `updated_at`, `created_at`) values (TEST, 2018-12-02, 2018-12-20, TEST, Rodrigo Navarrete, Softronix Company 26625149, 2018-04-22 01:31:12, 2018-04-22 01:31:12)) at C:\\Users\
 avar\\Desktop\\poteito\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:664, PDOException(code: 22007): SQLSTATE[22007]: Invalid datetime format: 1366 Incorrect integer value: 'Rodrigo Navarrete' for column 'responsible_user_id' at row 1 at C:\\Users\
 avar\\Desktop\\poteito\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:458)
@@ -2248,7 +2248,7 @@ avar\\Desktop\\poteito\\dumpordiebae1\\public\\index.php(55): Illuminate\\Founda
 avar\\Desktop\\poteito\\dumpordiebae1\\server.php(21): require_once('C:\\\\Users\\\
 avar\\\\...')
 #62 {main}
-"} 
+"}
 [2018-04-22 01:31:26] local.ERROR: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`softronix`.`projects`, CONSTRAINT `projects_client_id_foreign` FOREIGN KEY (`client_id`) REFERENCES `clients` (`id`)) (SQL: insert into `projects` (`title`, `date_init`, `date_end`, `description`, `responsible_user_id`, `client_id`, `updated_at`, `created_at`) values (TEST, 2018-02-12, 2018-02-20, TSEST, 1, 26625149, 2018-04-22 01:31:26, 2018-04-22 01:31:26)) {"userId":1,"email":"navarrete.rodrigo@hotmail.com","exception":"[object] (Illuminate\\Database\\QueryException(code: 23000): SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`softronix`.`projects`, CONSTRAINT `projects_client_id_foreign` FOREIGN KEY (`client_id`) REFERENCES `clients` (`id`)) (SQL: insert into `projects` (`title`, `date_init`, `date_end`, `description`, `responsible_user_id`, `client_id`, `updated_at`, `created_at`) values (TEST, 2018-02-12, 2018-02-20, TSEST, 1, 26625149, 2018-04-22 01:31:26, 2018-04-22 01:31:26)) at C:\\Users\
 avar\\Desktop\\poteito\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:664, PDOException(code: 23000): SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`softronix`.`projects`, CONSTRAINT `projects_client_id_foreign` FOREIGN KEY (`client_id`) REFERENCES `clients` (`id`)) at C:\\Users\
 avar\\Desktop\\poteito\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:458)
@@ -2378,7 +2378,7 @@ avar\\Desktop\\poteito\\dumpordiebae1\\public\\index.php(55): Illuminate\\Founda
 avar\\Desktop\\poteito\\dumpordiebae1\\server.php(21): require_once('C:\\\\Users\\\
 avar\\\\...')
 #62 {main}
-"} 
+"}
 [2018-04-22 01:32:38] local.ERROR: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`softronix`.`projects`, CONSTRAINT `projects_client_id_foreign` FOREIGN KEY (`client_id`) REFERENCES `clients` (`id`)) (SQL: insert into `projects` (`title`, `client_id`, `responsible_user_id`, `date_init`, `date_end`, `description`, `updated_at`, `created_at`) values (TEST, 26625149, 1, 2018-02-12, 2018-02-20, TSEST, 2018-04-22 01:32:38, 2018-04-22 01:32:38)) {"userId":1,"email":"navarrete.rodrigo@hotmail.com","exception":"[object] (Illuminate\\Database\\QueryException(code: 23000): SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`softronix`.`projects`, CONSTRAINT `projects_client_id_foreign` FOREIGN KEY (`client_id`) REFERENCES `clients` (`id`)) (SQL: insert into `projects` (`title`, `client_id`, `responsible_user_id`, `date_init`, `date_end`, `description`, `updated_at`, `created_at`) values (TEST, 26625149, 1, 2018-02-12, 2018-02-20, TSEST, 2018-04-22 01:32:38, 2018-04-22 01:32:38)) at C:\\Users\
 avar\\Desktop\\poteito\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:664, PDOException(code: 23000): SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`softronix`.`projects`, CONSTRAINT `projects_client_id_foreign` FOREIGN KEY (`client_id`) REFERENCES `clients` (`id`)) at C:\\Users\
 avar\\Desktop\\poteito\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:458)
@@ -2508,7 +2508,7 @@ avar\\Desktop\\poteito\\dumpordiebae1\\public\\index.php(55): Illuminate\\Founda
 avar\\Desktop\\poteito\\dumpordiebae1\\server.php(21): require_once('C:\\\\Users\\\
 avar\\\\...')
 #62 {main}
-"} 
+"}
 [2018-04-22 01:32:51] local.ERROR: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`softronix`.`projects`, CONSTRAINT `projects_client_id_foreign` FOREIGN KEY (`client_id`) REFERENCES `clients` (`id`)) (SQL: insert into `projects` (`title`, `client_id`, `responsible_user_id`, `date_init`, `date_end`, `description`, `updated_at`, `created_at`) values (ASD, 26625149, 1, 2018-12-02, 2018-12-02, asd, 2018-04-22 01:32:51, 2018-04-22 01:32:51)) {"userId":1,"email":"navarrete.rodrigo@hotmail.com","exception":"[object] (Illuminate\\Database\\QueryException(code: 23000): SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`softronix`.`projects`, CONSTRAINT `projects_client_id_foreign` FOREIGN KEY (`client_id`) REFERENCES `clients` (`id`)) (SQL: insert into `projects` (`title`, `client_id`, `responsible_user_id`, `date_init`, `date_end`, `description`, `updated_at`, `created_at`) values (ASD, 26625149, 1, 2018-12-02, 2018-12-02, asd, 2018-04-22 01:32:51, 2018-04-22 01:32:51)) at C:\\Users\
 avar\\Desktop\\poteito\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:664, PDOException(code: 23000): SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`softronix`.`projects`, CONSTRAINT `projects_client_id_foreign` FOREIGN KEY (`client_id`) REFERENCES `clients` (`id`)) at C:\\Users\
 avar\\Desktop\\poteito\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:458)
@@ -2638,7 +2638,7 @@ avar\\Desktop\\poteito\\dumpordiebae1\\public\\index.php(55): Illuminate\\Founda
 avar\\Desktop\\poteito\\dumpordiebae1\\server.php(21): require_once('C:\\\\Users\\\
 avar\\\\...')
 #62 {main}
-"} 
+"}
 [2018-04-22 01:33:51] local.ERROR: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`softronix`.`projects`, CONSTRAINT `projects_client_id_foreign` FOREIGN KEY (`client_id`) REFERENCES `clients` (`id`)) (SQL: insert into `projects` (`title`, `client_id`, `responsible_user_id`, `date_init`, `date_end`, `description`, `updated_at`, `created_at`) values (ASD, 26625149, 1, 2018-12-02, 2018-12-02, asd, 2018-04-22 01:33:51, 2018-04-22 01:33:51)) {"userId":1,"email":"navarrete.rodrigo@hotmail.com","exception":"[object] (Illuminate\\Database\\QueryException(code: 23000): SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`softronix`.`projects`, CONSTRAINT `projects_client_id_foreign` FOREIGN KEY (`client_id`) REFERENCES `clients` (`id`)) (SQL: insert into `projects` (`title`, `client_id`, `responsible_user_id`, `date_init`, `date_end`, `description`, `updated_at`, `created_at`) values (ASD, 26625149, 1, 2018-12-02, 2018-12-02, asd, 2018-04-22 01:33:51, 2018-04-22 01:33:51)) at C:\\Users\
 avar\\Desktop\\poteito\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:664, PDOException(code: 23000): SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`softronix`.`projects`, CONSTRAINT `projects_client_id_foreign` FOREIGN KEY (`client_id`) REFERENCES `clients` (`id`)) at C:\\Users\
 avar\\Desktop\\poteito\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:458)
@@ -2768,7 +2768,7 @@ avar\\Desktop\\poteito\\dumpordiebae1\\public\\index.php(55): Illuminate\\Founda
 avar\\Desktop\\poteito\\dumpordiebae1\\server.php(21): require_once('C:\\\\Users\\\
 avar\\\\...')
 #62 {main}
-"} 
+"}
 [2018-04-22 01:34:10] local.ERROR: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`softronix`.`projects`, CONSTRAINT `projects_client_id_foreign` FOREIGN KEY (`client_id`) REFERENCES `clients` (`id`)) (SQL: insert into `projects` (`title`, `client_id`, `responsible_user_id`, `date_init`, `date_end`, `description`, `updated_at`, `created_at`) values (Titulo, 26625149, 1, 2018-02-12, 2018-02-12, ASD, 2018-04-22 01:34:10, 2018-04-22 01:34:10)) {"userId":1,"email":"navarrete.rodrigo@hotmail.com","exception":"[object] (Illuminate\\Database\\QueryException(code: 23000): SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`softronix`.`projects`, CONSTRAINT `projects_client_id_foreign` FOREIGN KEY (`client_id`) REFERENCES `clients` (`id`)) (SQL: insert into `projects` (`title`, `client_id`, `responsible_user_id`, `date_init`, `date_end`, `description`, `updated_at`, `created_at`) values (Titulo, 26625149, 1, 2018-02-12, 2018-02-12, ASD, 2018-04-22 01:34:10, 2018-04-22 01:34:10)) at C:\\Users\
 avar\\Desktop\\poteito\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:664, PDOException(code: 23000): SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`softronix`.`projects`, CONSTRAINT `projects_client_id_foreign` FOREIGN KEY (`client_id`) REFERENCES `clients` (`id`)) at C:\\Users\
 avar\\Desktop\\poteito\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:458)
@@ -2898,7 +2898,7 @@ avar\\Desktop\\poteito\\dumpordiebae1\\public\\index.php(55): Illuminate\\Founda
 avar\\Desktop\\poteito\\dumpordiebae1\\server.php(21): require_once('C:\\\\Users\\\
 avar\\\\...')
 #62 {main}
-"} 
+"}
 [2018-04-22 01:37:08] local.ERROR: Parse error: syntax error, unexpected ''date_init'' (T_CONSTANT_ENCAPSED_STRING), expecting ']' {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Parse error: syntax error, unexpected ''date_init'' (T_CONSTANT_ENCAPSED_STRING), expecting ']' at C:\\Users\
 avar\\Desktop\\poteito\\dumpordiebae1\\app\\Http\\Controllers\\ProyectosController.php:33)
 [stacktrace]
@@ -2977,7 +2977,7 @@ avar\\Desktop\\poteito\\dumpordiebae1\\public\\index.php(55): Illuminate\\Founda
 avar\\Desktop\\poteito\\dumpordiebae1\\server.php(21): require_once('C:\\\\Users\\\
 avar\\\\...')
 #37 {main}
-"} 
+"}
 [2018-04-22 01:37:25] local.ERROR: Parse error: syntax error, unexpected ''date_init'' (T_CONSTANT_ENCAPSED_STRING), expecting ']' {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Parse error: syntax error, unexpected ''date_init'' (T_CONSTANT_ENCAPSED_STRING), expecting ']' at C:\\Users\
 avar\\Desktop\\poteito\\dumpordiebae1\\app\\Http\\Controllers\\ProyectosController.php:64)
 [stacktrace]
@@ -3056,7 +3056,7 @@ avar\\Desktop\\poteito\\dumpordiebae1\\public\\index.php(55): Illuminate\\Founda
 avar\\Desktop\\poteito\\dumpordiebae1\\server.php(21): require_once('C:\\\\Users\\\
 avar\\\\...')
 #37 {main}
-"} 
+"}
 [2018-04-22 01:37:38] local.ERROR: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`softronix`.`projects`, CONSTRAINT `projects_client_id_foreign` FOREIGN KEY (`client_id`) REFERENCES `clients` (`id`)) (SQL: insert into `projects` (`title`, `client_id`, `responsible_user_id`, `date_init`, `date_end`, `description`, `updated_at`, `created_at`) values (Titulo, 26625149, 1, 2018-02-12, 2018-02-12, ASD, 2018-04-22 01:37:38, 2018-04-22 01:37:38)) {"userId":1,"email":"navarrete.rodrigo@hotmail.com","exception":"[object] (Illuminate\\Database\\QueryException(code: 23000): SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`softronix`.`projects`, CONSTRAINT `projects_client_id_foreign` FOREIGN KEY (`client_id`) REFERENCES `clients` (`id`)) (SQL: insert into `projects` (`title`, `client_id`, `responsible_user_id`, `date_init`, `date_end`, `description`, `updated_at`, `created_at`) values (Titulo, 26625149, 1, 2018-02-12, 2018-02-12, ASD, 2018-04-22 01:37:38, 2018-04-22 01:37:38)) at C:\\Users\
 avar\\Desktop\\poteito\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:664, PDOException(code: 23000): SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`softronix`.`projects`, CONSTRAINT `projects_client_id_foreign` FOREIGN KEY (`client_id`) REFERENCES `clients` (`id`)) at C:\\Users\
 avar\\Desktop\\poteito\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:458)
@@ -3186,7 +3186,7 @@ avar\\Desktop\\poteito\\dumpordiebae1\\public\\index.php(55): Illuminate\\Founda
 avar\\Desktop\\poteito\\dumpordiebae1\\server.php(21): require_once('C:\\\\Users\\\
 avar\\\\...')
 #62 {main}
-"} 
+"}
 [2018-04-22 01:37:45] local.ERROR: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`softronix`.`projects`, CONSTRAINT `projects_client_id_foreign` FOREIGN KEY (`client_id`) REFERENCES `clients` (`id`)) (SQL: insert into `projects` (`title`, `client_id`, `responsible_user_id`, `date_init`, `date_end`, `description`, `updated_at`, `created_at`) values (Titulo, 26625149, 1, 2018-02-12, 2018-02-12, ASD, 2018-04-22 01:37:45, 2018-04-22 01:37:45)) {"userId":1,"email":"navarrete.rodrigo@hotmail.com","exception":"[object] (Illuminate\\Database\\QueryException(code: 23000): SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`softronix`.`projects`, CONSTRAINT `projects_client_id_foreign` FOREIGN KEY (`client_id`) REFERENCES `clients` (`id`)) (SQL: insert into `projects` (`title`, `client_id`, `responsible_user_id`, `date_init`, `date_end`, `description`, `updated_at`, `created_at`) values (Titulo, 26625149, 1, 2018-02-12, 2018-02-12, ASD, 2018-04-22 01:37:45, 2018-04-22 01:37:45)) at C:\\Users\
 avar\\Desktop\\poteito\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:664, PDOException(code: 23000): SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`softronix`.`projects`, CONSTRAINT `projects_client_id_foreign` FOREIGN KEY (`client_id`) REFERENCES `clients` (`id`)) at C:\\Users\
 avar\\Desktop\\poteito\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:458)
@@ -3316,7 +3316,7 @@ avar\\Desktop\\poteito\\dumpordiebae1\\public\\index.php(55): Illuminate\\Founda
 avar\\Desktop\\poteito\\dumpordiebae1\\server.php(21): require_once('C:\\\\Users\\\
 avar\\\\...')
 #62 {main}
-"} 
+"}
 [2018-04-22 01:43:03] local.ERROR: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`softronix`.`projects`, CONSTRAINT `projects_client_id_foreign` FOREIGN KEY (`client_id`) REFERENCES `clients` (`id`)) (SQL: insert into `projects` (`title`, `client_id`, `responsible_user_id`, `date_init`, `date_end`, `description`, `updated_at`, `created_at`) values (Titulo, 26625149, 1, 2018-02-12, 2018-02-12, ASD, 2018-04-22 01:43:03, 2018-04-22 01:43:03)) {"userId":1,"email":"navarrete.rodrigo@hotmail.com","exception":"[object] (Illuminate\\Database\\QueryException(code: 23000): SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`softronix`.`projects`, CONSTRAINT `projects_client_id_foreign` FOREIGN KEY (`client_id`) REFERENCES `clients` (`id`)) (SQL: insert into `projects` (`title`, `client_id`, `responsible_user_id`, `date_init`, `date_end`, `description`, `updated_at`, `created_at`) values (Titulo, 26625149, 1, 2018-02-12, 2018-02-12, ASD, 2018-04-22 01:43:03, 2018-04-22 01:43:03)) at C:\\Users\
 avar\\Desktop\\poteito\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:664, PDOException(code: 23000): SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`softronix`.`projects`, CONSTRAINT `projects_client_id_foreign` FOREIGN KEY (`client_id`) REFERENCES `clients` (`id`)) at C:\\Users\
 avar\\Desktop\\poteito\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:458)
@@ -3446,7 +3446,7 @@ avar\\Desktop\\poteito\\dumpordiebae1\\public\\index.php(55): Illuminate\\Founda
 avar\\Desktop\\poteito\\dumpordiebae1\\server.php(21): require_once('C:\\\\Users\\\
 avar\\\\...')
 #62 {main}
-"} 
+"}
 [2018-04-22 01:55:50] local.ERROR: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`softronix`.`projects`, CONSTRAINT `projects_client_id_foreign` FOREIGN KEY (`client_id`) REFERENCES `clients` (`id`)) (SQL: insert into `projects` (`title`, `client_id`, `responsible_user_id`, `date_init`, `date_end`, `description`, `updated_at`, `created_at`) values (TEST, 26625149, 1, 2018-12-02, 2018-12-02, asd, 2018-04-22 01:55:50, 2018-04-22 01:55:50)) {"userId":1,"email":"navarrete.rodrigo@hotmail.com","exception":"[object] (Illuminate\\Database\\QueryException(code: 23000): SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`softronix`.`projects`, CONSTRAINT `projects_client_id_foreign` FOREIGN KEY (`client_id`) REFERENCES `clients` (`id`)) (SQL: insert into `projects` (`title`, `client_id`, `responsible_user_id`, `date_init`, `date_end`, `description`, `updated_at`, `created_at`) values (TEST, 26625149, 1, 2018-12-02, 2018-12-02, asd, 2018-04-22 01:55:50, 2018-04-22 01:55:50)) at C:\\Users\
 avar\\Desktop\\poteito\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:664, PDOException(code: 23000): SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`softronix`.`projects`, CONSTRAINT `projects_client_id_foreign` FOREIGN KEY (`client_id`) REFERENCES `clients` (`id`)) at C:\\Users\
 avar\\Desktop\\poteito\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:458)
@@ -3576,7 +3576,7 @@ avar\\Desktop\\poteito\\dumpordiebae1\\public\\index.php(55): Illuminate\\Founda
 avar\\Desktop\\poteito\\dumpordiebae1\\server.php(21): require_once('C:\\\\Users\\\
 avar\\\\...')
 #62 {main}
-"} 
+"}
 [2018-04-22 10:46:22] local.ERROR: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '04148221649' for key 'users_phone_unique' (SQL: insert into `users` (`name`, `email`, `phone`, `password`, `updated_at`, `created_at`) values (Rodrigo Navarrete, admin@example.com, 04148221649, $2y$10$qXKotWHcRQl4D1ASgFvazOl7ZXv20ccMPBz1WiulUssZ9Pdsqavze, 2018-04-22 10:46:21, 2018-04-22 10:46:21)) {"exception":"[object] (Illuminate\\Database\\QueryException(code: 23000): SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '04148221649' for key 'users_phone_unique' (SQL: insert into `users` (`name`, `email`, `phone`, `password`, `updated_at`, `created_at`) values (Rodrigo Navarrete, admin@example.com, 04148221649, $2y$10$qXKotWHcRQl4D1ASgFvazOl7ZXv20ccMPBz1WiulUssZ9Pdsqavze, 2018-04-22 10:46:21, 2018-04-22 10:46:21)) at C:\\Users\
 avar\\Desktop\\poteito\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:664, PDOException(code: 23000): SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '04148221649' for key 'users_phone_unique' at C:\\Users\
 avar\\Desktop\\poteito\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:458)
@@ -3724,7 +3724,7 @@ avar\\Desktop\\poteito\\dumpordiebae1\\public\\index.php(55): Illuminate\\Founda
 avar\\Desktop\\poteito\\dumpordiebae1\\server.php(21): require_once('C:\\\\Users\\\
 avar\\\\...')
 #71 {main}
-"} 
+"}
 [2018-04-22 10:46:54] local.ERROR: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`softronix`.`projects`, CONSTRAINT `projects_client_id_foreign` FOREIGN KEY (`client_id`) REFERENCES `clients` (`id`)) (SQL: insert into `projects` (`title`, `client_id`, `responsible_user_id`, `date_init`, `date_end`, `description`, `updated_at`, `created_at`) values (TEST, 26625149, 3, 2018-02-12, 2018-02-12, ASD, 2018-04-22 10:46:54, 2018-04-22 10:46:54)) {"userId":3,"email":"admin@example.com","exception":"[object] (Illuminate\\Database\\QueryException(code: 23000): SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`softronix`.`projects`, CONSTRAINT `projects_client_id_foreign` FOREIGN KEY (`client_id`) REFERENCES `clients` (`id`)) (SQL: insert into `projects` (`title`, `client_id`, `responsible_user_id`, `date_init`, `date_end`, `description`, `updated_at`, `created_at`) values (TEST, 26625149, 3, 2018-02-12, 2018-02-12, ASD, 2018-04-22 10:46:54, 2018-04-22 10:46:54)) at C:\\Users\
 avar\\Desktop\\poteito\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:664, PDOException(code: 23000): SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`softronix`.`projects`, CONSTRAINT `projects_client_id_foreign` FOREIGN KEY (`client_id`) REFERENCES `clients` (`id`)) at C:\\Users\
 avar\\Desktop\\poteito\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:458)
@@ -3854,7 +3854,7 @@ avar\\Desktop\\poteito\\dumpordiebae1\\public\\index.php(55): Illuminate\\Founda
 avar\\Desktop\\poteito\\dumpordiebae1\\server.php(21): require_once('C:\\\\Users\\\
 avar\\\\...')
 #62 {main}
-"} 
+"}
 [2018-04-22 10:50:14] local.ERROR: Parse error: syntax error, unexpected '$proyecto' (T_VARIABLE) {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Parse error: syntax error, unexpected '$proyecto' (T_VARIABLE) at C:\\Users\
 avar\\Desktop\\poteito\\dumpordiebae1\\app\\Http\\Controllers\\ProyectosController.php:46)
 [stacktrace]
@@ -3933,7 +3933,7 @@ avar\\Desktop\\poteito\\dumpordiebae1\\public\\index.php(55): Illuminate\\Founda
 avar\\Desktop\\poteito\\dumpordiebae1\\server.php(21): require_once('C:\\\\Users\\\
 avar\\\\...')
 #37 {main}
-"} 
+"}
 [2018-04-22 10:52:21] local.ERROR: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`softronix`.`projects`, CONSTRAINT `projects_client_id_foreign` FOREIGN KEY (`client_id`) REFERENCES `clients` (`id`)) (SQL: insert into `projects` (`title`, `responsible_user_id`, `date_init`, `date_end`, `client_id`, `description`, `updated_at`, `created_at`) values (TEST, 3, 2018-02-12, 2018-02-12, 26625149, ASD, 2018-04-22 10:52:21, 2018-04-22 10:52:21)) {"userId":3,"email":"admin@example.com","exception":"[object] (Illuminate\\Database\\QueryException(code: 23000): SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`softronix`.`projects`, CONSTRAINT `projects_client_id_foreign` FOREIGN KEY (`client_id`) REFERENCES `clients` (`id`)) (SQL: insert into `projects` (`title`, `responsible_user_id`, `date_init`, `date_end`, `client_id`, `description`, `updated_at`, `created_at`) values (TEST, 3, 2018-02-12, 2018-02-12, 26625149, ASD, 2018-04-22 10:52:21, 2018-04-22 10:52:21)) at C:\\Users\
 avar\\Desktop\\poteito\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:664, PDOException(code: 23000): SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`softronix`.`projects`, CONSTRAINT `projects_client_id_foreign` FOREIGN KEY (`client_id`) REFERENCES `clients` (`id`)) at C:\\Users\
 avar\\Desktop\\poteito\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:458)
@@ -4063,7 +4063,7 @@ avar\\Desktop\\poteito\\dumpordiebae1\\public\\index.php(55): Illuminate\\Founda
 avar\\Desktop\\poteito\\dumpordiebae1\\server.php(21): require_once('C:\\\\Users\\\
 avar\\\\...')
 #62 {main}
-"} 
+"}
 [2018-04-22 10:53:43] local.ERROR: SQLSTATE[HY000]: General error: 1364 Field 'client_id' doesn't have a default value (SQL: insert into `projects` (`title`, `responsible_user_id`, `date_init`, `date_end`, `description`, `updated_at`, `created_at`) values (TEST, 3, 2018-02-12, 2018-02-12, ASD, 2018-04-22 10:53:43, 2018-04-22 10:53:43)) {"userId":3,"email":"admin@example.com","exception":"[object] (Illuminate\\Database\\QueryException(code: HY000): SQLSTATE[HY000]: General error: 1364 Field 'client_id' doesn't have a default value (SQL: insert into `projects` (`title`, `responsible_user_id`, `date_init`, `date_end`, `description`, `updated_at`, `created_at`) values (TEST, 3, 2018-02-12, 2018-02-12, ASD, 2018-04-22 10:53:43, 2018-04-22 10:53:43)) at C:\\Users\
 avar\\Desktop\\poteito\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:664, PDOException(code: HY000): SQLSTATE[HY000]: General error: 1364 Field 'client_id' doesn't have a default value at C:\\Users\
 avar\\Desktop\\poteito\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:458)
@@ -4193,7 +4193,7 @@ avar\\Desktop\\poteito\\dumpordiebae1\\public\\index.php(55): Illuminate\\Founda
 avar\\Desktop\\poteito\\dumpordiebae1\\server.php(21): require_once('C:\\\\Users\\\
 avar\\\\...')
 #62 {main}
-"} 
+"}
 [2018-04-22 10:53:59] local.ERROR: SQLSTATE[HY000]: General error: 1364 Field 'client_id' doesn't have a default value (SQL: insert into `projects` (`title`, `responsible_user_id`, `date_init`, `date_end`, `description`, `updated_at`, `created_at`) values (TEST, 3, 2018-02-12, 2018-02-12, ASD, 2018-04-22 10:53:59, 2018-04-22 10:53:59)) {"userId":3,"email":"admin@example.com","exception":"[object] (Illuminate\\Database\\QueryException(code: HY000): SQLSTATE[HY000]: General error: 1364 Field 'client_id' doesn't have a default value (SQL: insert into `projects` (`title`, `responsible_user_id`, `date_init`, `date_end`, `description`, `updated_at`, `created_at`) values (TEST, 3, 2018-02-12, 2018-02-12, ASD, 2018-04-22 10:53:59, 2018-04-22 10:53:59)) at C:\\Users\
 avar\\Desktop\\poteito\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:664, PDOException(code: HY000): SQLSTATE[HY000]: General error: 1364 Field 'client_id' doesn't have a default value at C:\\Users\
 avar\\Desktop\\poteito\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:458)
@@ -4323,7 +4323,7 @@ avar\\Desktop\\poteito\\dumpordiebae1\\public\\index.php(55): Illuminate\\Founda
 avar\\Desktop\\poteito\\dumpordiebae1\\server.php(21): require_once('C:\\\\Users\\\
 avar\\\\...')
 #62 {main}
-"} 
+"}
 [2018-04-22 10:54:15] local.ERROR: SQLSTATE[HY000]: General error: 1364 Field 'client_id' doesn't have a default value (SQL: insert into `projects` (`title`, `responsible_user_id`, `date_init`, `date_end`, `description`, `updated_at`, `created_at`) values (TEST, 1, 2012-12-12, 2018-12-12, ASD, 2018-04-22 10:54:15, 2018-04-22 10:54:15)) {"userId":3,"email":"admin@example.com","exception":"[object] (Illuminate\\Database\\QueryException(code: HY000): SQLSTATE[HY000]: General error: 1364 Field 'client_id' doesn't have a default value (SQL: insert into `projects` (`title`, `responsible_user_id`, `date_init`, `date_end`, `description`, `updated_at`, `created_at`) values (TEST, 1, 2012-12-12, 2018-12-12, ASD, 2018-04-22 10:54:15, 2018-04-22 10:54:15)) at C:\\Users\
 avar\\Desktop\\poteito\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:664, PDOException(code: HY000): SQLSTATE[HY000]: General error: 1364 Field 'client_id' doesn't have a default value at C:\\Users\
 avar\\Desktop\\poteito\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:458)
@@ -4453,7 +4453,7 @@ avar\\Desktop\\poteito\\dumpordiebae1\\public\\index.php(55): Illuminate\\Founda
 avar\\Desktop\\poteito\\dumpordiebae1\\server.php(21): require_once('C:\\\\Users\\\
 avar\\\\...')
 #62 {main}
-"} 
+"}
 [2018-04-22 10:54:40] local.ERROR: SQLSTATE[HY000]: General error: 1364 Field 'client_id' doesn't have a default value (SQL: insert into `projects` (`title`, `responsible_user_id`, `date_init`, `date_end`, `description`, `updated_at`, `created_at`) values (TEST, 1, 2012-12-12, 2018-12-12, ASD, 2018-04-22 10:54:40, 2018-04-22 10:54:40)) {"userId":3,"email":"admin@example.com","exception":"[object] (Illuminate\\Database\\QueryException(code: HY000): SQLSTATE[HY000]: General error: 1364 Field 'client_id' doesn't have a default value (SQL: insert into `projects` (`title`, `responsible_user_id`, `date_init`, `date_end`, `description`, `updated_at`, `created_at`) values (TEST, 1, 2012-12-12, 2018-12-12, ASD, 2018-04-22 10:54:40, 2018-04-22 10:54:40)) at C:\\Users\
 avar\\Desktop\\poteito\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:664, PDOException(code: HY000): SQLSTATE[HY000]: General error: 1364 Field 'client_id' doesn't have a default value at C:\\Users\
 avar\\Desktop\\poteito\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:458)
@@ -4583,7 +4583,7 @@ avar\\Desktop\\poteito\\dumpordiebae1\\public\\index.php(55): Illuminate\\Founda
 avar\\Desktop\\poteito\\dumpordiebae1\\server.php(21): require_once('C:\\\\Users\\\
 avar\\\\...')
 #62 {main}
-"} 
+"}
 [2018-04-22 10:54:45] local.ERROR: SQLSTATE[HY000]: General error: 1364 Field 'client_id' doesn't have a default value (SQL: insert into `projects` (`title`, `responsible_user_id`, `date_init`, `date_end`, `description`, `updated_at`, `created_at`) values (TEST, 1, 2012-12-12, 2018-12-12, ASD, 2018-04-22 10:54:44, 2018-04-22 10:54:44)) {"userId":3,"email":"admin@example.com","exception":"[object] (Illuminate\\Database\\QueryException(code: HY000): SQLSTATE[HY000]: General error: 1364 Field 'client_id' doesn't have a default value (SQL: insert into `projects` (`title`, `responsible_user_id`, `date_init`, `date_end`, `description`, `updated_at`, `created_at`) values (TEST, 1, 2012-12-12, 2018-12-12, ASD, 2018-04-22 10:54:44, 2018-04-22 10:54:44)) at C:\\Users\
 avar\\Desktop\\poteito\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:664, PDOException(code: HY000): SQLSTATE[HY000]: General error: 1364 Field 'client_id' doesn't have a default value at C:\\Users\
 avar\\Desktop\\poteito\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:458)
@@ -4713,7 +4713,7 @@ avar\\Desktop\\poteito\\dumpordiebae1\\public\\index.php(55): Illuminate\\Founda
 avar\\Desktop\\poteito\\dumpordiebae1\\server.php(21): require_once('C:\\\\Users\\\
 avar\\\\...')
 #62 {main}
-"} 
+"}
 [2018-04-22 10:54:53] local.ERROR: SQLSTATE[HY000]: General error: 1364 Field 'client_id' doesn't have a default value (SQL: insert into `projects` (`title`, `responsible_user_id`, `date_init`, `date_end`, `description`, `updated_at`, `created_at`) values (TEST, 1, 2012-12-12, 2018-12-12, ASD, 2018-04-22 10:54:53, 2018-04-22 10:54:53)) {"userId":3,"email":"admin@example.com","exception":"[object] (Illuminate\\Database\\QueryException(code: HY000): SQLSTATE[HY000]: General error: 1364 Field 'client_id' doesn't have a default value (SQL: insert into `projects` (`title`, `responsible_user_id`, `date_init`, `date_end`, `description`, `updated_at`, `created_at`) values (TEST, 1, 2012-12-12, 2018-12-12, ASD, 2018-04-22 10:54:53, 2018-04-22 10:54:53)) at C:\\Users\
 avar\\Desktop\\poteito\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:664, PDOException(code: HY000): SQLSTATE[HY000]: General error: 1364 Field 'client_id' doesn't have a default value at C:\\Users\
 avar\\Desktop\\poteito\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:458)
@@ -4843,7 +4843,7 @@ avar\\Desktop\\poteito\\dumpordiebae1\\public\\index.php(55): Illuminate\\Founda
 avar\\Desktop\\poteito\\dumpordiebae1\\server.php(21): require_once('C:\\\\Users\\\
 avar\\\\...')
 #62 {main}
-"} 
+"}
 [2018-04-22 10:54:58] local.ERROR: SQLSTATE[HY000]: General error: 1364 Field 'client_id' doesn't have a default value (SQL: insert into `projects` (`title`, `responsible_user_id`, `date_init`, `date_end`, `description`, `updated_at`, `created_at`) values (TEST, 1, 2012-12-12, 2018-12-12, ASD, 2018-04-22 10:54:58, 2018-04-22 10:54:58)) {"userId":3,"email":"admin@example.com","exception":"[object] (Illuminate\\Database\\QueryException(code: HY000): SQLSTATE[HY000]: General error: 1364 Field 'client_id' doesn't have a default value (SQL: insert into `projects` (`title`, `responsible_user_id`, `date_init`, `date_end`, `description`, `updated_at`, `created_at`) values (TEST, 1, 2012-12-12, 2018-12-12, ASD, 2018-04-22 10:54:58, 2018-04-22 10:54:58)) at C:\\Users\
 avar\\Desktop\\poteito\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:664, PDOException(code: HY000): SQLSTATE[HY000]: General error: 1364 Field 'client_id' doesn't have a default value at C:\\Users\
 avar\\Desktop\\poteito\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:458)
@@ -4973,7 +4973,7 @@ avar\\Desktop\\poteito\\dumpordiebae1\\public\\index.php(55): Illuminate\\Founda
 avar\\Desktop\\poteito\\dumpordiebae1\\server.php(21): require_once('C:\\\\Users\\\
 avar\\\\...')
 #62 {main}
-"} 
+"}
 [2018-04-22 10:55:28] local.ERROR: SQLSTATE[HY000]: General error: 1364 Field 'client_id' doesn't have a default value (SQL: insert into `projects` (`title`, `responsible_user_id`, `date_init`, `date_end`, `description`, `updated_at`, `created_at`) values (ASD, 3, 2018-12-02, 2018-12-02, ASD, 2018-04-22 10:55:28, 2018-04-22 10:55:28)) {"userId":3,"email":"admin@example.com","exception":"[object] (Illuminate\\Database\\QueryException(code: HY000): SQLSTATE[HY000]: General error: 1364 Field 'client_id' doesn't have a default value (SQL: insert into `projects` (`title`, `responsible_user_id`, `date_init`, `date_end`, `description`, `updated_at`, `created_at`) values (ASD, 3, 2018-12-02, 2018-12-02, ASD, 2018-04-22 10:55:28, 2018-04-22 10:55:28)) at C:\\Users\
 avar\\Desktop\\poteito\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:664, PDOException(code: HY000): SQLSTATE[HY000]: General error: 1364 Field 'client_id' doesn't have a default value at C:\\Users\
 avar\\Desktop\\poteito\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:458)
@@ -5103,7 +5103,7 @@ avar\\Desktop\\poteito\\dumpordiebae1\\public\\index.php(55): Illuminate\\Founda
 avar\\Desktop\\poteito\\dumpordiebae1\\server.php(21): require_once('C:\\\\Users\\\
 avar\\\\...')
 #62 {main}
-"} 
+"}
 [2018-04-22 11:01:52] local.ERROR: Creating default object from empty value {"userId":3,"email":"admin@example.com","exception":"[object] (ErrorException(code: 0): Creating default object from empty value at C:\\Users\
 avar\\Desktop\\poteito\\dumpordiebae1\\app\\Http\\Controllers\\ClientesController.php:80)
 [stacktrace]
@@ -5215,7 +5215,7 @@ avar\\Desktop\\poteito\\dumpordiebae1\\public\\index.php(55): Illuminate\\Founda
 avar\\Desktop\\poteito\\dumpordiebae1\\server.php(21): require_once('C:\\\\Users\\\
 avar\\\\...')
 #53 {main}
-"} 
+"}
 [2018-04-22 11:02:54] local.ERROR: Creating default object from empty value {"userId":3,"email":"admin@example.com","exception":"[object] (ErrorException(code: 0): Creating default object from empty value at C:\\Users\
 avar\\Desktop\\poteito\\dumpordiebae1\\app\\Http\\Controllers\\ClientesController.php:80)
 [stacktrace]
@@ -5327,7 +5327,7 @@ avar\\Desktop\\poteito\\dumpordiebae1\\public\\index.php(55): Illuminate\\Founda
 avar\\Desktop\\poteito\\dumpordiebae1\\server.php(21): require_once('C:\\\\Users\\\
 avar\\\\...')
 #53 {main}
-"} 
+"}
 [2018-04-22 11:06:21] local.ERROR: Creating default object from empty value {"userId":3,"email":"admin@example.com","exception":"[object] (ErrorException(code: 0): Creating default object from empty value at C:\\Users\
 avar\\Desktop\\poteito\\dumpordiebae1\\app\\Http\\Controllers\\ClientesController.php:80)
 [stacktrace]
@@ -5439,7 +5439,7 @@ avar\\Desktop\\poteito\\dumpordiebae1\\public\\index.php(55): Illuminate\\Founda
 avar\\Desktop\\poteito\\dumpordiebae1\\server.php(21): require_once('C:\\\\Users\\\
 avar\\\\...')
 #53 {main}
-"} 
+"}
 [2018-04-22 11:06:43] local.ERROR: Creating default object from empty value {"userId":3,"email":"admin@example.com","exception":"[object] (ErrorException(code: 0): Creating default object from empty value at C:\\Users\
 avar\\Desktop\\poteito\\dumpordiebae1\\app\\Http\\Controllers\\ClientesController.php:80)
 [stacktrace]
@@ -5551,7 +5551,7 @@ avar\\Desktop\\poteito\\dumpordiebae1\\public\\index.php(55): Illuminate\\Founda
 avar\\Desktop\\poteito\\dumpordiebae1\\server.php(21): require_once('C:\\\\Users\\\
 avar\\\\...')
 #53 {main}
-"} 
+"}
 [2018-04-22 11:06:58] local.ERROR: Creating default object from empty value {"userId":3,"email":"admin@example.com","exception":"[object] (ErrorException(code: 0): Creating default object from empty value at C:\\Users\
 avar\\Desktop\\poteito\\dumpordiebae1\\app\\Http\\Controllers\\ClientesController.php:80)
 [stacktrace]
@@ -5663,7 +5663,7 @@ avar\\Desktop\\poteito\\dumpordiebae1\\public\\index.php(55): Illuminate\\Founda
 avar\\Desktop\\poteito\\dumpordiebae1\\server.php(21): require_once('C:\\\\Users\\\
 avar\\\\...')
 #53 {main}
-"} 
+"}
 [2018-04-22 11:08:55] local.ERROR: Creating default object from empty value {"userId":3,"email":"admin@example.com","exception":"[object] (ErrorException(code: 0): Creating default object from empty value at C:\\Users\
 avar\\Desktop\\poteito\\dumpordiebae1\\app\\Http\\Controllers\\ClientesController.php:79)
 [stacktrace]
@@ -5775,7 +5775,7 @@ avar\\Desktop\\poteito\\dumpordiebae1\\public\\index.php(55): Illuminate\\Founda
 avar\\Desktop\\poteito\\dumpordiebae1\\server.php(21): require_once('C:\\\\Users\\\
 avar\\\\...')
 #53 {main}
-"} 
+"}
 [2018-04-22 11:12:17] local.ERROR: Creating default object from empty value {"userId":3,"email":"admin@example.com","exception":"[object] (ErrorException(code: 0): Creating default object from empty value at C:\\Users\
 avar\\Desktop\\poteito\\dumpordiebae1\\app\\Http\\Controllers\\ClientesController.php:80)
 [stacktrace]
@@ -5887,7 +5887,7 @@ avar\\Desktop\\poteito\\dumpordiebae1\\public\\index.php(55): Illuminate\\Founda
 avar\\Desktop\\poteito\\dumpordiebae1\\server.php(21): require_once('C:\\\\Users\\\
 avar\\\\...')
 #53 {main}
-"} 
+"}
 [2018-04-22 11:16:42] local.ERROR: Creating default object from empty value {"userId":3,"email":"admin@example.com","exception":"[object] (ErrorException(code: 0): Creating default object from empty value at C:\\Users\
 avar\\Desktop\\poteito\\dumpordiebae1\\app\\Http\\Controllers\\ClientesController.php:80)
 [stacktrace]
@@ -5999,7 +5999,7 @@ avar\\Desktop\\poteito\\dumpordiebae1\\public\\index.php(55): Illuminate\\Founda
 avar\\Desktop\\poteito\\dumpordiebae1\\server.php(21): require_once('C:\\\\Users\\\
 avar\\\\...')
 #53 {main}
-"} 
+"}
 [2018-04-22 11:16:45] local.ERROR: Creating default object from empty value {"userId":3,"email":"admin@example.com","exception":"[object] (ErrorException(code: 0): Creating default object from empty value at C:\\Users\
 avar\\Desktop\\poteito\\dumpordiebae1\\app\\Http\\Controllers\\ClientesController.php:80)
 [stacktrace]
@@ -6111,7 +6111,7 @@ avar\\Desktop\\poteito\\dumpordiebae1\\public\\index.php(55): Illuminate\\Founda
 avar\\Desktop\\poteito\\dumpordiebae1\\server.php(21): require_once('C:\\\\Users\\\
 avar\\\\...')
 #53 {main}
-"} 
+"}
 [2018-04-22 11:19:43] local.ERROR: Creating default object from empty value {"userId":3,"email":"admin@example.com","exception":"[object] (ErrorException(code: 0): Creating default object from empty value at C:\\Users\
 avar\\Desktop\\poteito\\dumpordiebae1\\app\\Http\\Controllers\\ClientesController.php:80)
 [stacktrace]
@@ -6223,7 +6223,7 @@ avar\\Desktop\\poteito\\dumpordiebae1\\public\\index.php(55): Illuminate\\Founda
 avar\\Desktop\\poteito\\dumpordiebae1\\server.php(21): require_once('C:\\\\Users\\\
 avar\\\\...')
 #53 {main}
-"} 
+"}
 [2018-04-22 15:32:17] local.ERROR: Command "server" is not defined.
 
 Did you mean this?
@@ -6244,7 +6244,7 @@ avar\\Desktop\\poteito\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illumina
 #4 C:\\Users\
 avar\\Desktop\\poteito\\dumpordiebae1\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
 #5 {main}
-"} 
+"}
 [2018-04-25 13:15:58] local.ERROR: There are no commands defined in the "serve" namespace. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): There are no commands defined in the \"serve\" namespace. at C:\\Users\
 avar\\Desktop\\poteito\\dumpordiebae1\\vendor\\symfony\\console\\Application.php:557)
 [stacktrace]
@@ -6261,7 +6261,7 @@ avar\\Desktop\\poteito\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illumina
 #5 C:\\Users\
 avar\\Desktop\\poteito\\dumpordiebae1\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
 #6 {main}
-"} 
+"}
 [2018-04-25 13:16:08] local.ERROR: Too many arguments, expected arguments "command". {"exception":"[object] (Symfony\\Component\\Console\\Exception\\RuntimeException(code: 0): Too many arguments, expected arguments \"command\". at C:\\Users\
 avar\\Desktop\\poteito\\dumpordiebae1\\vendor\\symfony\\console\\Input\\ArgvInput.php:182)
 [stacktrace]
@@ -6286,7 +6286,7 @@ avar\\Desktop\\poteito\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illumina
 #9 C:\\Users\
 avar\\Desktop\\poteito\\dumpordiebae1\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
 #10 {main}
-"} 
+"}
 [2018-04-25 13:16:15] local.ERROR: Command "migrate:seed" is not defined.
 
 Did you mean one of these?
@@ -6323,7 +6323,7 @@ avar\\Desktop\\poteito\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illumina
 #4 C:\\Users\
 avar\\Desktop\\poteito\\dumpordiebae1\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
 #5 {main}
-"} 
+"}
 [2018-04-25 13:16:25] local.ERROR: SQLSTATE[42000]: Syntax error or access violation: 1091 Can't DROP 'tasks_module_id_foreign'; check that column/key exists (SQL: alter table `tasks` drop foreign key `tasks_module_id_foreign`) {"exception":"[object] (Illuminate\\Database\\QueryException(code: 42000): SQLSTATE[42000]: Syntax error or access violation: 1091 Can't DROP 'tasks_module_id_foreign'; check that column/key exists (SQL: alter table `tasks` drop foreign key `tasks_module_id_foreign`) at C:\\Users\
 avar\\Desktop\\poteito\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:664, PDOException(code: 42000): SQLSTATE[42000]: Syntax error or access violation: 1091 Can't DROP 'tasks_module_id_foreign'; check that column/key exists at C:\\Users\
 avar\\Desktop\\poteito\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:458)
@@ -6406,7 +6406,7 @@ avar\\Desktop\\poteito\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illumina
 #38 C:\\Users\
 avar\\Desktop\\poteito\\dumpordiebae1\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
 #39 {main}
-"} 
+"}
 [2018-04-25 13:20:06] local.ERROR: SQLSTATE[42000]: Syntax error or access violation: 1091 Can't DROP 'tasks_module_id_foreign'; check that column/key exists (SQL: alter table `tasks` drop foreign key `tasks_module_id_foreign`) {"exception":"[object] (Illuminate\\Database\\QueryException(code: 42000): SQLSTATE[42000]: Syntax error or access violation: 1091 Can't DROP 'tasks_module_id_foreign'; check that column/key exists (SQL: alter table `tasks` drop foreign key `tasks_module_id_foreign`) at C:\\Users\
 avar\\Desktop\\poteito\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:664, PDOException(code: 42000): SQLSTATE[42000]: Syntax error or access violation: 1091 Can't DROP 'tasks_module_id_foreign'; check that column/key exists at C:\\Users\
 avar\\Desktop\\poteito\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:458)
@@ -6489,7 +6489,7 @@ avar\\Desktop\\poteito\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illumina
 #38 C:\\Users\
 avar\\Desktop\\poteito\\dumpordiebae1\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
 #39 {main}
-"} 
+"}
 [2018-04-25 13:20:57] local.ERROR: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '04148221649' for key 'users_phone_unique' (SQL: insert into `users` (`name`, `email`, `phone`, `country_id`, `state_id`, `password`, `remember_token`, `created_at`) values (Rodrigo Navarrete, rodrigo@rodrigo.com, 04148221649, 237, 4036, $2y$10$gdGH.6oPyZrb0Q2iupZWqOdlkLQ3I3JehB681TWKw8xI4zW28Nes2, DbiFcML3ch, 2018-04-25 13:20:57)) {"exception":"[object] (Illuminate\\Database\\QueryException(code: 23000): SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '04148221649' for key 'users_phone_unique' (SQL: insert into `users` (`name`, `email`, `phone`, `country_id`, `state_id`, `password`, `remember_token`, `created_at`) values (Rodrigo Navarrete, rodrigo@rodrigo.com, 04148221649, 237, 4036, $2y$10$gdGH.6oPyZrb0Q2iupZWqOdlkLQ3I3JehB681TWKw8xI4zW28Nes2, DbiFcML3ch, 2018-04-25 13:20:57)) at C:\\Users\
 avar\\Desktop\\poteito\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:664, PDOException(code: 23000): SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '04148221649' for key 'users_phone_unique' at C:\\Users\
 avar\\Desktop\\poteito\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:458)
@@ -6564,7 +6564,7 @@ avar\\Desktop\\poteito\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illumina
 #35 C:\\Users\
 avar\\Desktop\\poteito\\dumpordiebae1\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
 #36 {main}
-"} 
+"}
 [2018-04-25 13:24:13] local.ERROR: SQLSTATE[42000]: Syntax error or access violation: 1091 Can't DROP 'tasks_module_id_foreign'; check that column/key exists (SQL: alter table `tasks` drop foreign key `tasks_module_id_foreign`) {"exception":"[object] (Illuminate\\Database\\QueryException(code: 42000): SQLSTATE[42000]: Syntax error or access violation: 1091 Can't DROP 'tasks_module_id_foreign'; check that column/key exists (SQL: alter table `tasks` drop foreign key `tasks_module_id_foreign`) at C:\\Users\
 avar\\Desktop\\poteito\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:664, PDOException(code: 42000): SQLSTATE[42000]: Syntax error or access violation: 1091 Can't DROP 'tasks_module_id_foreign'; check that column/key exists at C:\\Users\
 avar\\Desktop\\poteito\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:458)
@@ -6647,7 +6647,7 @@ avar\\Desktop\\poteito\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illumina
 #38 C:\\Users\
 avar\\Desktop\\poteito\\dumpordiebae1\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
 #39 {main}
-"} 
+"}
 [2018-04-25 13:24:29] local.ERROR: SQLSTATE[42000]: Syntax error or access violation: 1091 Can't DROP 'tasks_module_id_foreign'; check that column/key exists (SQL: alter table `tasks` drop foreign key `tasks_module_id_foreign`) {"exception":"[object] (Illuminate\\Database\\QueryException(code: 42000): SQLSTATE[42000]: Syntax error or access violation: 1091 Can't DROP 'tasks_module_id_foreign'; check that column/key exists (SQL: alter table `tasks` drop foreign key `tasks_module_id_foreign`) at C:\\Users\
 avar\\Desktop\\poteito\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:664, PDOException(code: 42000): SQLSTATE[42000]: Syntax error or access violation: 1091 Can't DROP 'tasks_module_id_foreign'; check that column/key exists at C:\\Users\
 avar\\Desktop\\poteito\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:458)
@@ -6730,7 +6730,7 @@ avar\\Desktop\\poteito\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illumina
 #38 C:\\Users\
 avar\\Desktop\\poteito\\dumpordiebae1\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
 #39 {main}
-"} 
+"}
 [2018-04-25 13:26:40] local.ERROR: Command "migrate:seed" is not defined.
 
 Did you mean one of these?
@@ -6767,7 +6767,7 @@ avar\\Desktop\\poteito\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illumina
 #4 C:\\Users\
 avar\\Desktop\\poteito\\dumpordiebae1\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
 #5 {main}
-"} 
+"}
 [2018-04-25 13:27:16] local.ERROR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'softronix.countries' doesn't exist (SQL: select * from `countries`) {"userId":1,"email":"rodrigo@rodrigo.com","exception":"[object] (Illuminate\\Database\\QueryException(code: 42S02): SQLSTATE[42S02]: Base table or view not found: 1146 Table 'softronix.countries' doesn't exist (SQL: select * from `countries`) at C:\\Users\
 avar\\Desktop\\poteito\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:664, PDOException(code: 42S02): SQLSTATE[42S02]: Base table or view not found: 1146 Table 'softronix.countries' doesn't exist at C:\\Users\
 avar\\Desktop\\poteito\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:326)
@@ -6893,7 +6893,7 @@ avar\\Desktop\\poteito\\dumpordiebae1\\public\\index.php(55): Illuminate\\Founda
 avar\\Desktop\\poteito\\dumpordiebae1\\server.php(21): require_once('C:\\\\Users\\\
 avar\\\\...')
 #60 {main}
-"} 
+"}
 [2018-04-25 14:21:45] local.ERROR: file_put_contents(C:\Users\Isidro\github\dumpordiebae1\storage\framework/sessions/7SToS8y1slejrvpiHgMBIxZvuHyuzKGWzctkNy65): failed to open stream: No such file or directory {"exception":"[object] (ErrorException(code: 0): file_put_contents(C:\\Users\\Isidro\\github\\dumpordiebae1\\storage\\framework/sessions/7SToS8y1slejrvpiHgMBIxZvuHyuzKGWzctkNy65): failed to open stream: No such file or directory at C:\\Users\\Isidro\\github\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php:122)
 [stacktrace]
 #0 [internal function]: Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'file_put_conten...', 'C:\\\\Users\\\\Isidro...', 122, Array)
@@ -6906,7 +6906,7 @@ avar\\\\...')
 #7 C:\\Users\\Isidro\\github\\dumpordiebae1\\public\\index.php(60): Illuminate\\Foundation\\Http\\Kernel->terminate(Object(Illuminate\\Http\\Request), Object(Illuminate\\Http\\Response))
 #8 C:\\Users\\Isidro\\github\\dumpordiebae1\\server.php(21): require_once('C:\\\\Users\\\\Isidro...')
 #9 {main}
-"} 
+"}
 [2018-04-25 14:22:23] local.ERROR: Command "dump-autoload" is not defined. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"dump-autoload\" is not defined. at C:\\Users\\Isidro\\github\\dumpordiebae1\\vendor\\symfony\\console\\Application.php:611)
 [stacktrace]
 #0 C:\\Users\\Isidro\\github\\dumpordiebae1\\vendor\\symfony\\console\\Application.php(224): Symfony\\Component\\Console\\Application->find('dump-autoload')
@@ -6915,7 +6915,7 @@ avar\\\\...')
 #3 C:\\Users\\Isidro\\github\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(122): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
 #4 C:\\Users\\Isidro\\github\\dumpordiebae1\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
 #5 {main}
-"} 
+"}
 [2018-04-25 14:24:16] local.ERROR: file_put_contents(C:\Users\Isidro\github\dumpordiebae1\storage\framework/sessions/7SToS8y1slejrvpiHgMBIxZvuHyuzKGWzctkNy65): failed to open stream: No such file or directory {"exception":"[object] (ErrorException(code: 0): file_put_contents(C:\\Users\\Isidro\\github\\dumpordiebae1\\storage\\framework/sessions/7SToS8y1slejrvpiHgMBIxZvuHyuzKGWzctkNy65): failed to open stream: No such file or directory at C:\\Users\\Isidro\\github\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php:122)
 [stacktrace]
 #0 [internal function]: Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'file_put_conten...', 'C:\\\\Users\\\\Isidro...', 122, Array)
@@ -6928,4 +6928,4 @@ avar\\\\...')
 #7 C:\\Users\\Isidro\\github\\dumpordiebae1\\public\\index.php(60): Illuminate\\Foundation\\Http\\Kernel->terminate(Object(Illuminate\\Http\\Request), Object(Illuminate\\Http\\Response))
 #8 C:\\Users\\Isidro\\github\\dumpordiebae1\\server.php(21): require_once('C:\\\\Users\\\\Isidro...')
 #9 {main}
-"} 
+"}
