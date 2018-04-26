@@ -18,4 +18,9 @@ class Proyectos extends Model
     {
       return $this->hasMany(Modulos::class, 'project_id');
     }
+
+    public function desarrolladores()
+    {
+      return $this->belongsToMany(User::class, 'participants', 'project_id');
+    }
 }

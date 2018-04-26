@@ -58,5 +58,10 @@ class HomeController extends Controller
 
    return view('home');
  }
+ public function getStates(Request $request){
+  $states = DB::table('states')->where('country_id', $request->input('country_id'))->get();
+
+  return response()->json($states);
+}
 
 }

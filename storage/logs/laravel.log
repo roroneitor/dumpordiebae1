@@ -20802,3 +20802,129 @@ avar\\Desktop\\Tesis\\dumpordiebae1\\server.php(21): require_once('C:\\\\Users\\
 avar\\\\...')
 #60 {main}
 "} 
+[2018-04-26 23:46:05] local.ERROR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'softronix.participants' doesn't exist (SQL: insert into `participants` (`project_id`, `user_id`, `created_at`) values (29, 2, 2018-04-26 23:46:05)) {"userId":2,"email":"admin@example.com","exception":"[object] (Illuminate\\Database\\QueryException(code: 42S02): SQLSTATE[42S02]: Base table or view not found: 1146 Table 'softronix.participants' doesn't exist (SQL: insert into `participants` (`project_id`, `user_id`, `created_at`) values (29, 2, 2018-04-26 23:46:05)) at C:\\Users\
+avar\\Desktop\\Tesis\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:664, PDOException(code: 42S02): SQLSTATE[42S02]: Base table or view not found: 1146 Table 'softronix.participants' doesn't exist at C:\\Users\
+avar\\Desktop\\Tesis\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:452)
+[stacktrace]
+#0 C:\\Users\
+avar\\Desktop\\Tesis\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(624): Illuminate\\Database\\Connection->runQueryCallback('insert into `pa...', Array, Object(Closure))
+#1 C:\\Users\
+avar\\Desktop\\Tesis\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(459): Illuminate\\Database\\Connection->run('insert into `pa...', Array, Object(Closure))
+#2 C:\\Users\
+avar\\Desktop\\Tesis\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(411): Illuminate\\Database\\Connection->statement('insert into `pa...', Array)
+#3 C:\\Users\
+avar\\Desktop\\Tesis\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Builder.php(2332): Illuminate\\Database\\Connection->insert('insert into `pa...', Array)
+#4 C:\\Users\
+avar\\Desktop\\Tesis\\dumpordiebae1\\app\\Http\\Controllers\\ProyectosController.php(81): Illuminate\\Database\\Query\\Builder->insert(Array)
+#5 [internal function]: App\\Http\\Controllers\\ProyectosController->store(Object(Illuminate\\Http\\Request))
+#6 C:\\Users\
+avar\\Desktop\\Tesis\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php(54): call_user_func_array(Array, Array)
+#7 C:\\Users\
+avar\\Desktop\\Tesis\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(45): Illuminate\\Routing\\Controller->callAction('store', Array)
+#8 C:\\Users\
+avar\\Desktop\\Tesis\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(212): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\ProyectosController), 'store')
+#9 C:\\Users\
+avar\\Desktop\\Tesis\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(169): Illuminate\\Routing\\Route->runController()
+#10 C:\\Users\
+avar\\Desktop\\Tesis\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(659): Illuminate\\Routing\\Route->run()
+#11 C:\\Users\
+avar\\Desktop\\Tesis\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(30): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#12 C:\\Users\
+avar\\Desktop\\Tesis\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(41): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#13 C:\\Users\
+avar\\Desktop\\Tesis\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#14 C:\\Users\
+avar\\Desktop\\Tesis\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#15 C:\\Users\
+avar\\Desktop\\Tesis\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Auth\\Middleware\\Authenticate.php(43): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#16 C:\\Users\
+avar\\Desktop\\Tesis\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Auth\\Middleware\\Authenticate->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#17 C:\\Users\
+avar\\Desktop\\Tesis\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#18 C:\\Users\
+avar\\Desktop\\Tesis\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken.php(67): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#19 C:\\Users\
+avar\\Desktop\\Tesis\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#20 C:\\Users\
+avar\\Desktop\\Tesis\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#21 C:\\Users\
+avar\\Desktop\\Tesis\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Middleware\\ShareErrorsFromSession.php(49): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#22 C:\\Users\
+avar\\Desktop\\Tesis\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#23 C:\\Users\
+avar\\Desktop\\Tesis\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#24 C:\\Users\
+avar\\Desktop\\Tesis\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(63): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#25 C:\\Users\
+avar\\Desktop\\Tesis\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#26 C:\\Users\
+avar\\Desktop\\Tesis\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#27 C:\\Users\
+avar\\Desktop\\Tesis\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse.php(37): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#28 C:\\Users\
+avar\\Desktop\\Tesis\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#29 C:\\Users\
+avar\\Desktop\\Tesis\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#30 C:\\Users\
+avar\\Desktop\\Tesis\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\EncryptCookies.php(59): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#31 C:\\Users\
+avar\\Desktop\\Tesis\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#32 C:\\Users\
+avar\\Desktop\\Tesis\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#33 C:\\Users\
+avar\\Desktop\\Tesis\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(102): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#34 C:\\Users\
+avar\\Desktop\\Tesis\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(661): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#35 C:\\Users\
+avar\\Desktop\\Tesis\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(636): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#36 C:\\Users\
+avar\\Desktop\\Tesis\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(602): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#37 C:\\Users\
+avar\\Desktop\\Tesis\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(591): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#38 C:\\Users\
+avar\\Desktop\\Tesis\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(176): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#39 C:\\Users\
+avar\\Desktop\\Tesis\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(30): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#40 C:\\Users\
+avar\\Desktop\\Tesis\\dumpordiebae1\\vendor\\fideloper\\proxy\\src\\TrustProxies.php(57): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#41 C:\\Users\
+avar\\Desktop\\Tesis\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Fideloper\\Proxy\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#42 C:\\Users\
+avar\\Desktop\\Tesis\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#43 C:\\Users\
+avar\\Desktop\\Tesis\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(30): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#44 C:\\Users\
+avar\\Desktop\\Tesis\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#45 C:\\Users\
+avar\\Desktop\\Tesis\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#46 C:\\Users\
+avar\\Desktop\\Tesis\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(30): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#47 C:\\Users\
+avar\\Desktop\\Tesis\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#48 C:\\Users\
+avar\\Desktop\\Tesis\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#49 C:\\Users\
+avar\\Desktop\\Tesis\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#50 C:\\Users\
+avar\\Desktop\\Tesis\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#51 C:\\Users\
+avar\\Desktop\\Tesis\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#52 C:\\Users\
+avar\\Desktop\\Tesis\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode.php(46): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#53 C:\\Users\
+avar\\Desktop\\Tesis\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#54 C:\\Users\
+avar\\Desktop\\Tesis\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#55 C:\\Users\
+avar\\Desktop\\Tesis\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(102): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#56 C:\\Users\
+avar\\Desktop\\Tesis\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(151): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#57 C:\\Users\
+avar\\Desktop\\Tesis\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#58 C:\\Users\
+avar\\Desktop\\Tesis\\dumpordiebae1\\public\\index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#59 C:\\Users\
+avar\\Desktop\\Tesis\\dumpordiebae1\\server.php(21): require_once('C:\\\\Users\\\
+avar\\\\...')
+#60 {main}
+"} 
