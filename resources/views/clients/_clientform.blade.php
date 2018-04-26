@@ -12,11 +12,11 @@
 </div>
 <div class="form-group">
   <label>Telefono</label>
-  <input type="number" class="form-control" id="phone" placeholder="+584141234567" name="phone" value="{{ old('phone', isset($cliente) ? $cliente->phone : '') }}">
+  <input type="tel" class="form-control" id="phone" placeholder="+584148221649" name="phone" value="{{ old('phone', isset($cliente) ? $cliente->phone : '') }}">
 </div>
 <div class="form-group">
 <label>Pais</label>
-<select type="text" class="form-control select2" id="country_id" name="country_id">
+<select type="text" class="form-control select2" id="country_id" placeholder="Venezuela" name="country_id">
   @foreach ($country as $pais)
 <option value="{{$pais->id}}" {{isset($cliente) ? ($cliente->country_id == $pais->id ? 'selected': '') : $pais->id == 237 ? 'selected': ''}}>{{$pais->name}}</option>
 @endforeach
@@ -24,9 +24,9 @@
 </div>
 <div class="form-group">
 <label>Estado / Provincia</label>
-<select type="text" class="form-control select2"  id="state_id" name="state_id">
+<select type="text" class="form-control select2" id="state_id" placeholder="Venezuela" name="state_id">
   @foreach ($states as $estado)
-<option  value="{{$estado->id}}" {{isset($cliente) ? ($cliente->state_id == $estado->id ? 'selected': '') : ''}}>{{$estado->name}}</option>
+<option value="{{$estado->id}}" {{isset($cliente) ? ($cliente->state_id == $estado->id ? 'selected': '') : ''}}>{{$estado->name}}</option>
 @endforeach
 </select>
 </div>

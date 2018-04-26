@@ -7,6 +7,8 @@ use App\Proyectos;
 use App\Modulos;
 use DB;
 use App\Clientes;
+use App\User;
+
 use Carbon\Carbon;
 
 class ProyectosController extends Controller
@@ -16,8 +18,9 @@ class ProyectosController extends Controller
     $proyecto = [];
     $modulos = [];
     $clientes = Clientes::all();
+    $usuarios = User::all();
 
-    return view('projects.addproject', compact('modulos', 'clientes'));
+    return view('projects.addproject', compact('modulos', 'clientes', 'usuarios'));
   }
 
   //Mostrar Clientes
@@ -30,16 +33,21 @@ class ProyectosController extends Controller
   //Guardar cliente
   public function store(Request $request)
   {
-    //dd($request->all(),$request->input('module')[1], json_decode($request->input('module')[1], true));
+    // dd($request->all());
+
     $this->validate($request, [
       'title' => 'required',
       'date_init' => 'required',
       'date_end' => 'required',
-      'description' => 'required|string|max:144',
+      'description' => 'required'
     ]);
 
-    if (!$request->has('module')) {
-      return response()->json(false, 422);
+    if (!$request->has('modulo')) {
+      return response()->json(['resp' => false, 'modulo' => 'modulo'], 422);
+    }
+
+    if (!$request->has('usuario')) {
+      return response()->json(['resp' => false, 'modulo' => 'usuario'], 422);
     }
 
     $proyecto = New Proyectos;
@@ -64,6 +72,18 @@ class ProyectosController extends Controller
 
     }
 
+    if ($request->has('usuario')) {
+      foreach ($request->input('usuario') as $key => $usuario) {
+
+        DB::table('participants')->insert([
+          'project_id' => $proyecto->id,
+          'user_id' => $usuario,
+          'created_at' => Carbon::now()
+        ]);
+
+      }
+    }
+
     return response()->json(true);
   }
 
@@ -71,37 +91,26 @@ class ProyectosController extends Controller
   {
     $modulos = [];
     $clientes = Clientes::all();
+    $usuarios = User::all();
 
-    return view('projects.editproject', compact('proyecto', 'modulos', 'clientes'));
+    return view('projects.editproject', compact('proyecto', 'modulos', 'clientes', 'usuarios'));
   }
 
   public function update(Proyectos $proyecto, Request $request)
   {
-    // dd($request->all());
-    // $this->validate($request, [
-    // 'title' => 'required',
-    // 'date_init' => 'required',
-    // 'date_end' => 'required',
-    // 'description' => 'required'
-    // ]);
-    //
-    // $proyecto->title = request()->title;
-    // $proyecto->date_init = request()->date_init;
-    // $proyecto->date_end = request()->date_end;
-    // $proyecto->description = request()->description;
-    // $proyecto->update();
-    //
-    // return view('home');
-
     $this->validate($request, [
       'title' => 'required',
       'date_init' => 'required',
       'date_end' => 'required',
-      'description' => 'required|string|max:144',
+      'description' => 'required'
     ]);
 
     if (!$request->has('modulo')) {
-      return response()->json(false, 422);
+      return response()->json(['resp' => false, 'modulo' => 'modulo'], 422);
+    }
+
+    if (!$request->has('usuario')) {
+      return response()->json(['resp' => false, 'modulo' => 'usuario'], 422);
     }
 
     $proyecto->title = request()->title;
@@ -114,6 +123,7 @@ class ProyectosController extends Controller
     $proyecto->save();
 
     $new_key_module = [];
+    $new_key_users = [];
 
     $modulos = json_decode(request()->modulo, true);
 
@@ -152,6 +162,17 @@ class ProyectosController extends Controller
         ->delete();
     }
 
+    $proyecto->desarrolladores()->sync($request->input('usuario'));
+      // foreach ($request->input('usuario') as $key => $usuario) {
+      //
+      //   DB::table('participants')->insert([
+      //     'project_id' => $proyecto->id,
+      //     'user_id' => $usuario,
+      //     'created_at' => Carbon::now()
+      //   ]);
+      //
+      // }
+
     return response()->json(true);
   }
 
@@ -160,10 +181,5 @@ class ProyectosController extends Controller
     $proyecto->delete();
 
     return redirect('home');
-  }
-
-  public function view(Proyectos $proyecto)
-  {
-       return view('projects.viewproject', compact('proyecto'));
   }
 }
