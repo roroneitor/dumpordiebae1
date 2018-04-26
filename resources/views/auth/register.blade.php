@@ -1,3 +1,4 @@
+@if(Auth::user()->hasRole('admin'))
 
 <!DOCTYPE html>
 <html>
@@ -71,3 +72,6 @@
 @yield('scripts')
 </body>
 </html>
+@else
+    <p>Lo siento mano, no puedes.</p>
+@endif

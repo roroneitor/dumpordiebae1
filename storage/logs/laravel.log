@@ -7918,3 +7918,8 @@ avar\\Desktop\\poteito\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illumina
 avar\\Desktop\\poteito\\dumpordiebae1\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
 #11 {main}
 "} 
+[2018-04-26 12:36:50] local.ERROR: Cannot redeclare App\Http\Controllers\HomeController::index() {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalErrorException(code: 64): Cannot redeclare App\\Http\\Controllers\\HomeController::index() at C:\\Users\
+avar\\Desktop\\Tesis\\dumpordiebae1\\app\\Http\\Controllers\\HomeController.php:30)
+[stacktrace]
+#0 {main}
+"} 

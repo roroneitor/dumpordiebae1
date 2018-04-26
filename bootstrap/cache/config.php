@@ -1,5 +1,5 @@
 <?php return array (
-  'app' =>
+  'app' => 
   array (
     'name' => 'Laravel',
     'env' => 'local',
@@ -10,7 +10,7 @@
     'fallback_locale' => 'en',
     'key' => 'base64:70qsToARWaO+odwY9bXovsCG7j1fIpqyl6GFKBjb0ZE=',
     'cipher' => 'AES-256-CBC',
-    'providers' =>
+    'providers' => 
     array (
       0 => 'Illuminate\\Auth\\AuthServiceProvider',
       1 => 'Illuminate\\Broadcasting\\BroadcastServiceProvider',
@@ -34,12 +34,12 @@
       19 => 'Illuminate\\Translation\\TranslationServiceProvider',
       20 => 'Illuminate\\Validation\\ValidationServiceProvider',
       21 => 'Illuminate\\View\\ViewServiceProvider',
-      23 => 'App\\Providers\\AppServiceProvider',
-      24 => 'App\\Providers\\AuthServiceProvider',
-      25 => 'App\\Providers\\EventServiceProvider',
-      26 => 'App\\Providers\\RouteServiceProvider',
+      22 => 'App\\Providers\\AppServiceProvider',
+      23 => 'App\\Providers\\AuthServiceProvider',
+      24 => 'App\\Providers\\EventServiceProvider',
+      25 => 'App\\Providers\\RouteServiceProvider',
     ),
-    'aliases' =>
+    'aliases' => 
     array (
       'App' => 'Illuminate\\Support\\Facades\\App',
       'Artisan' => 'Illuminate\\Support\\Facades\\Artisan',
@@ -76,37 +76,37 @@
       'View' => 'Illuminate\\Support\\Facades\\View',
     ),
   ),
-  'auth' =>
+  'auth' => 
   array (
-    'defaults' =>
+    'defaults' => 
     array (
       'guard' => 'web',
       'passwords' => 'users',
     ),
-    'guards' =>
+    'guards' => 
     array (
-      'web' =>
+      'web' => 
       array (
         'driver' => 'session',
         'provider' => 'users',
       ),
-      'api' =>
+      'api' => 
       array (
         'driver' => 'token',
         'provider' => 'users',
       ),
     ),
-    'providers' =>
+    'providers' => 
     array (
-      'users' =>
+      'users' => 
       array (
         'driver' => 'eloquent',
         'model' => 'App\\User',
       ),
     ),
-    'passwords' =>
+    'passwords' => 
     array (
-      'users' =>
+      'users' => 
       array (
         'provider' => 'users',
         'table' => 'password_resets',
@@ -114,77 +114,77 @@
       ),
     ),
   ),
-  'broadcasting' =>
+  'broadcasting' => 
   array (
     'default' => 'log',
-    'connections' =>
+    'connections' => 
     array (
-      'pusher' =>
+      'pusher' => 
       array (
         'driver' => 'pusher',
         'key' => '',
         'secret' => '',
         'app_id' => '',
-        'options' =>
+        'options' => 
         array (
           'cluster' => 'mt1',
           'encrypted' => true,
         ),
       ),
-      'redis' =>
+      'redis' => 
       array (
         'driver' => 'redis',
         'connection' => 'default',
       ),
-      'log' =>
+      'log' => 
       array (
         'driver' => 'log',
       ),
-      'null' =>
+      'null' => 
       array (
         'driver' => 'null',
       ),
     ),
   ),
-  'cache' =>
+  'cache' => 
   array (
     'default' => 'file',
-    'stores' =>
+    'stores' => 
     array (
-      'apc' =>
+      'apc' => 
       array (
         'driver' => 'apc',
       ),
-      'array' =>
+      'array' => 
       array (
         'driver' => 'array',
       ),
-      'database' =>
+      'database' => 
       array (
         'driver' => 'database',
         'table' => 'cache',
         'connection' => NULL,
       ),
-      'file' =>
+      'file' => 
       array (
         'driver' => 'file',
-        'path' => 'C:\\Users\\navar\\Desktop\\poteito\\dumpordiebae1\\storage\\framework/cache/data',
+        'path' => 'C:\\Users\\navar\\Desktop\\Tesis\\dumpordiebae1\\storage\\framework/cache/data',
       ),
-      'memcached' =>
+      'memcached' => 
       array (
         'driver' => 'memcached',
         'persistent_id' => NULL,
-        'sasl' =>
+        'sasl' => 
         array (
           0 => NULL,
           1 => NULL,
         ),
-        'options' =>
+        'options' => 
         array (
         ),
-        'servers' =>
+        'servers' => 
         array (
-          0 =>
+          0 => 
           array (
             'host' => '127.0.0.1',
             'port' => 11211,
@@ -192,7 +192,7 @@
           ),
         ),
       ),
-      'redis' =>
+      'redis' => 
       array (
         'driver' => 'redis',
         'connection' => 'default',
@@ -200,18 +200,18 @@
     ),
     'prefix' => 'laravel_cache',
   ),
-  'database' =>
+  'database' => 
   array (
     'default' => 'mysql',
-    'connections' =>
+    'connections' => 
     array (
-      'sqlite' =>
+      'sqlite' => 
       array (
         'driver' => 'sqlite',
         'database' => 'Softronix',
         'prefix' => '',
       ),
-      'mysql' =>
+      'mysql' => 
       array (
         'driver' => 'mysql',
         'host' => '127.0.0.1',
@@ -226,7 +226,7 @@
         'strict' => true,
         'engine' => NULL,
       ),
-      'pgsql' =>
+      'pgsql' => 
       array (
         'driver' => 'pgsql',
         'host' => '127.0.0.1',
@@ -239,7 +239,7 @@
         'schema' => 'public',
         'sslmode' => 'prefer',
       ),
-      'sqlsrv' =>
+      'sqlsrv' => 
       array (
         'driver' => 'sqlsrv',
         'host' => '127.0.0.1',
@@ -252,10 +252,10 @@
       ),
     ),
     'migrations' => 'migrations',
-    'redis' =>
+    'redis' => 
     array (
       'client' => 'predis',
-      'default' =>
+      'default' => 
       array (
         'host' => '127.0.0.1',
         'password' => NULL,
@@ -264,25 +264,25 @@
       ),
     ),
   ),
-  'filesystems' =>
+  'filesystems' => 
   array (
     'default' => 'local',
     'cloud' => 's3',
-    'disks' =>
+    'disks' => 
     array (
-      'local' =>
+      'local' => 
       array (
         'driver' => 'local',
-        'root' => 'C:\\Users\\navar\\Desktop\\poteito\\dumpordiebae1\\storage\\app',
+        'root' => 'C:\\Users\\navar\\Desktop\\Tesis\\dumpordiebae1\\storage\\app',
       ),
-      'public' =>
+      'public' => 
       array (
         'driver' => 'local',
-        'root' => 'C:\\Users\\navar\\Desktop\\poteito\\dumpordiebae1\\storage\\app/public',
+        'root' => 'C:\\Users\\navar\\Desktop\\Tesis\\dumpordiebae1\\storage\\app/public',
         'url' => 'http://localhost/storage',
         'visibility' => 'public',
       ),
-      's3' =>
+      's3' => 
       array (
         'driver' => 's3',
         'key' => NULL,
@@ -293,47 +293,47 @@
       ),
     ),
   ),
-  'hashing' =>
+  'hashing' => 
   array (
     'driver' => 'bcrypt',
-    'bcrypt' =>
+    'bcrypt' => 
     array (
       'rounds' => 10,
     ),
-    'argon' =>
+    'argon' => 
     array (
       'memory' => 1024,
       'threads' => 2,
       'time' => 2,
     ),
   ),
-  'logging' =>
+  'logging' => 
   array (
     'default' => 'stack',
-    'channels' =>
+    'channels' => 
     array (
-      'stack' =>
+      'stack' => 
       array (
         'driver' => 'stack',
-        'channels' =>
+        'channels' => 
         array (
           0 => 'single',
         ),
       ),
-      'single' =>
+      'single' => 
       array (
         'driver' => 'single',
-        'path' => 'C:\\Users\\navar\\Desktop\\poteito\\dumpordiebae1\\storage\\logs/laravel.log',
+        'path' => 'C:\\Users\\navar\\Desktop\\Tesis\\dumpordiebae1\\storage\\logs/laravel.log',
         'level' => 'debug',
       ),
-      'daily' =>
+      'daily' => 
       array (
         'driver' => 'daily',
-        'path' => 'C:\\Users\\navar\\Desktop\\poteito\\dumpordiebae1\\storage\\logs/laravel.log',
+        'path' => 'C:\\Users\\navar\\Desktop\\Tesis\\dumpordiebae1\\storage\\logs/laravel.log',
         'level' => 'debug',
         'days' => 7,
       ),
-      'slack' =>
+      'slack' => 
       array (
         'driver' => 'slack',
         'url' => NULL,
@@ -341,33 +341,33 @@
         'emoji' => ':boom:',
         'level' => 'critical',
       ),
-      'stderr' =>
+      'stderr' => 
       array (
         'driver' => 'monolog',
         'handler' => 'Monolog\\Handler\\StreamHandler',
-        'with' =>
+        'with' => 
         array (
           'stream' => 'php://stderr',
         ),
       ),
-      'syslog' =>
+      'syslog' => 
       array (
         'driver' => 'syslog',
         'level' => 'debug',
       ),
-      'errorlog' =>
+      'errorlog' => 
       array (
         'driver' => 'errorlog',
         'level' => 'debug',
       ),
     ),
   ),
-  'mail' =>
+  'mail' => 
   array (
     'driver' => 'smtp',
     'host' => 'smtp.mailtrap.io',
     'port' => '2525',
-    'from' =>
+    'from' => 
     array (
       'address' => 'hello@example.com',
       'name' => 'Example',
@@ -376,39 +376,39 @@
     'username' => NULL,
     'password' => NULL,
     'sendmail' => '/usr/sbin/sendmail -bs',
-    'markdown' =>
+    'markdown' => 
     array (
       'theme' => 'default',
-      'paths' =>
+      'paths' => 
       array (
-        0 => 'C:\\Users\\navar\\Desktop\\poteito\\dumpordiebae1\\resources\\views/vendor/mail',
+        0 => 'C:\\Users\\navar\\Desktop\\Tesis\\dumpordiebae1\\resources\\views/vendor/mail',
       ),
     ),
   ),
-  'queue' =>
+  'queue' => 
   array (
     'default' => 'sync',
-    'connections' =>
+    'connections' => 
     array (
-      'sync' =>
+      'sync' => 
       array (
         'driver' => 'sync',
       ),
-      'database' =>
+      'database' => 
       array (
         'driver' => 'database',
         'table' => 'jobs',
         'queue' => 'default',
         'retry_after' => 90,
       ),
-      'beanstalkd' =>
+      'beanstalkd' => 
       array (
         'driver' => 'beanstalkd',
         'host' => 'localhost',
         'queue' => 'default',
         'retry_after' => 90,
       ),
-      'sqs' =>
+      'sqs' => 
       array (
         'driver' => 'sqs',
         'key' => 'your-public-key',
@@ -417,7 +417,7 @@
         'queue' => 'your-queue-name',
         'region' => 'us-east-1',
       ),
-      'redis' =>
+      'redis' => 
       array (
         'driver' => 'redis',
         'connection' => 'default',
@@ -426,47 +426,47 @@
         'block_for' => NULL,
       ),
     ),
-    'failed' =>
+    'failed' => 
     array (
       'database' => 'mysql',
       'table' => 'failed_jobs',
     ),
   ),
-  'services' =>
+  'services' => 
   array (
-    'mailgun' =>
+    'mailgun' => 
     array (
       'domain' => NULL,
       'secret' => NULL,
     ),
-    'ses' =>
+    'ses' => 
     array (
       'key' => NULL,
       'secret' => NULL,
       'region' => 'us-east-1',
     ),
-    'sparkpost' =>
+    'sparkpost' => 
     array (
       'secret' => NULL,
     ),
-    'stripe' =>
+    'stripe' => 
     array (
       'model' => 'App\\User',
       'key' => NULL,
       'secret' => NULL,
     ),
   ),
-  'session' =>
+  'session' => 
   array (
     'driver' => 'file',
     'lifetime' => '120',
     'expire_on_close' => false,
     'encrypt' => false,
-    'files' => 'C:\\Users\\navar\\Desktop\\poteito\\dumpordiebae1\\storage\\framework/sessions',
+    'files' => 'C:\\Users\\navar\\Desktop\\Tesis\\dumpordiebae1\\storage\\framework/sessions',
     'connection' => NULL,
     'table' => 'sessions',
     'store' => NULL,
-    'lottery' =>
+    'lottery' => 
     array (
       0 => 2,
       1 => 100,
@@ -478,23 +478,23 @@
     'http_only' => true,
     'same_site' => NULL,
   ),
-  'tinker' =>
+  'view' => 
   array (
-    'dont_alias' =>
+    'paths' => 
     array (
+      0 => 'C:\\Users\\navar\\Desktop\\Tesis\\dumpordiebae1\\resources\\views',
     ),
+    'compiled' => 'C:\\Users\\navar\\Desktop\\Tesis\\dumpordiebae1\\storage\\framework\\views',
   ),
-  'trustedproxy' =>
+  'trustedproxy' => 
   array (
     'proxies' => NULL,
     'headers' => 30,
   ),
-  'view' =>
+  'tinker' => 
   array (
-    'paths' =>
+    'dont_alias' => 
     array (
-      0 => 'C:\\Users\\navar\\Desktop\\poteito\\dumpordiebae1\\resources\\views',
     ),
-    'compiled' => 'C:\\Users\\navar\\Desktop\\poteito\\dumpordiebae1\\storage\\framework\\views',
   ),
 );
