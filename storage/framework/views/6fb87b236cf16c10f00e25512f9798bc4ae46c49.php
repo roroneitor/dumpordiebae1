@@ -22,6 +22,7 @@
         <li class="active"><a href=""><i class="fa fa-link"></i> <span>Principal</span></a></li>
       </ul>
 
+<?php if(Auth::user()->hasRole('Administrador')): ?>
       <ul class="sidebar-menu" data-widget="tree">
         <li class="header"><i class="fa fa-user"></i> Usuarios</li>
         <!-- Optionally, you can add icons to the links -->
@@ -35,12 +36,18 @@
         <li><a href="<?php echo e(route('CrearCliente')); ?>"><span>Agregar cliente</span></a></li>
         <li><a href="<?php echo e(route('MostrarClientes')); ?>">Ver clientes</span></a></li>
       </ul>
+<?php endif; ?>
+<?php if(Auth::user()->hasRole('Administrador', 'Lider de Proyecto') ): ?>
       <ul class="sidebar-menu" data-widget="tree">
         <li class="header"><i class="fa fa-tasks"></i> PROYECTOS</li>
         <!-- Optionally, you can add icons to the links -->
+        <?php if(Auth::user()->hasRole('Administrador')): ?>
         <li><a href="<?php echo e(route('CrearProyecto')); ?>"><span>Crear proyecto</span></a></li>
+          <?php endif; ?>
+
         <li><a href="<?php echo e(route('MostrarProyectos')); ?>"><span>Ver proyectos</span></a></li>
       </ul>
+<?php endif; ?>
       <ul class="sidebar-menu" data-widget="tree">
         <li class="header">TAREAS ?</li>
         <!-- Optionally, you can add icons to the links -->
@@ -50,4 +57,3 @@
     </section>
     <!-- /.sidebar -->
   </aside>
-  

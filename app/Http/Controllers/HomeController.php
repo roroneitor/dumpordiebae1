@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use Auth;
 use App\User;
 use App\Role;
+use DB;
+
 class HomeController extends Controller
 {
     /**
@@ -35,27 +37,18 @@ class HomeController extends Controller
    return view('AsignarRoles', compact('Usuarios', 'Roles'));
  }
 
- public function saverole(User $user, Request $request)
+ public function saverole(Request $request)
  {
-
-
    $this->validate($request, [
      'user_id' => 'required',
+     'role_id' => 'required',
    ]);
-   $user->user_id = request()->user_id;
-   $user->update();
 
-   if ($role_id = 1) {
-     $user->roles()->attach(Role::where('name', 'Administrador')->first());
-   }
-   elseif ($role_id = 2) {
-     $user->roles()->attach(Role::where('name', 'Lider de Proyecto')->first());
-   }
-   elseif ($role_id = 3) {
-     $user->roles()->attach(Role::where('name', 'Usuario')->first());
-   }
-
-
+   DB::table('role_user')
+   ->where('user_id',$request['user_id'])
+   ->update([
+     'role_id' => $request['role_id']
+            ]);
 
    return view('home');
  }

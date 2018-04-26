@@ -1,4 +1,4 @@
-<?php if(Auth::user()->hasRole('admin')): ?>
+
 
 <!DOCTYPE html>
 <html>
@@ -72,6 +72,3 @@
 <?php echo $__env->yieldContent('scripts'); ?>
 </body>
 </html>
-<?php else: ?>
-    <p>Lo siento mano, no puedes.</p>
-<?php endif; ?>
