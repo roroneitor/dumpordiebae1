@@ -39,3 +39,7 @@ Route::group(['middleware' => 'auth'], function () {
   Route::put('/proyecto/{proyecto}', 'ProyectosController@update')->name('ActualizarProyecto');
   Route::get('/proyecto/{proyecto}', 'ProyectosController@view')->name('VerProyecto');
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
