@@ -7887,7 +7887,34 @@ avar\\\\...')
 #58 C:\\Users\\Isidro\\github\\dumpordiebae1\\server.php(21): require_once('C:\\\\Users\\\\Isidro...')
 #59 {main}
 "} 
-[2018-04-25 22:11:49] local.ERROR: SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión.
+[2018-04-25 22:11:49] local.ERROR: SQLSTATE[HY000] [2002] No se puede establecer una conexiï¿½n ya que el equipo de destino denegï¿½ expresamente dicha conexiï¿½n.
   
-[2018-04-25 22:11:49] local.ERROR: SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión.
+[2018-04-25 22:11:49] local.ERROR: SQLSTATE[HY000] [2002] No se puede establecer una conexiï¿½n ya que el equipo de destino denegï¿½ expresamente dicha conexiï¿½n.
  (SQL: select * from `users` where `email` = rodrigo@rodrigo.com limit 1)  
+[2018-04-26 01:05:14] local.ERROR: Parse error: syntax error, unexpected 'class' (T_CLASS) {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): Parse error: syntax error, unexpected 'class' (T_CLASS) at C:\\Users\
+avar\\Desktop\\poteito\\dumpordiebae1\\app\\Providers\\AppServiceProvider.php:11)
+[stacktrace]
+#0 C:\\Users\
+avar\\Desktop\\poteito\\dumpordiebae1\\vendor\\composer\\ClassLoader.php(322): Composer\\Autoload\\includeFile('C:\\\\Users\\\
+avar\\\\...')
+#1 [internal function]: Composer\\Autoload\\ClassLoader->loadClass('App\\\\Providers\\\\A...')
+#2 C:\\Users\
+avar\\Desktop\\poteito\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(637): spl_autoload_call('App\\\\Providers\\\\A...')
+#3 C:\\Users\
+avar\\Desktop\\poteito\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(569): Illuminate\\Foundation\\Application->resolveProvider('App\\\\Providers\\\\A...')
+#4 C:\\Users\
+avar\\Desktop\\poteito\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\ProviderRepository.php(75): Illuminate\\Foundation\\Application->register('App\\\\Providers\\\\A...')
+#5 C:\\Users\
+avar\\Desktop\\poteito\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(548): Illuminate\\Foundation\\ProviderRepository->load(Array)
+#6 C:\\Users\
+avar\\Desktop\\poteito\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\RegisterProviders.php(17): Illuminate\\Foundation\\Application->registerConfiguredProviders()
+#7 C:\\Users\
+avar\\Desktop\\poteito\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(206): Illuminate\\Foundation\\Bootstrap\\RegisterProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#8 C:\\Users\
+avar\\Desktop\\poteito\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(297): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#9 C:\\Users\
+avar\\Desktop\\poteito\\dumpordiebae1\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(120): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#10 C:\\Users\
+avar\\Desktop\\poteito\\dumpordiebae1\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#11 {main}
+"} 
