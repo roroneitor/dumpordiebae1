@@ -7887,3 +7887,7 @@ avar\\\\...')
 #58 C:\\Users\\Isidro\\github\\dumpordiebae1\\server.php(21): require_once('C:\\\\Users\\\\Isidro...')
 #59 {main}
 "} 
+[2018-04-25 22:11:49] local.ERROR: SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión.
+  
+[2018-04-25 22:11:49] local.ERROR: SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión.
+ (SQL: select * from `users` where `email` = rodrigo@rodrigo.com limit 1)  

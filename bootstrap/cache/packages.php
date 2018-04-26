@@ -1,4 +1,15 @@
 <?php return array (
+  'caffeinated/shinobi' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Caffeinated\\Shinobi\\ShinobiServiceProvider',
+    ),
+    'aliases' => 
+    array (
+      'Shinobi' => 'Caffeinated\\Shinobi\\Facades\\Shinobi',
+    ),
+  ),
   'fideloper/proxy' => 
   array (
     'providers' => 
@@ -18,17 +29,6 @@
     'providers' => 
     array (
       0 => 'NunoMaduro\\Collision\\Adapters\\Laravel\\CollisionServiceProvider',
-    ),
-  ),
-  'caffeinated/shinobi' => 
-  array (
-    'providers' => 
-    array (
-      0 => 'Caffeinated\\Shinobi\\ShinobiServiceProvider',
-    ),
-    'aliases' => 
-    array (
-      'Shinobi' => 'Caffeinated\\Shinobi\\Facades\\Shinobi',
     ),
   ),
 );
