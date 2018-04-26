@@ -41,6 +41,9 @@
     26 => 'App\\Providers\\AuthServiceProvider',
     27 => 'App\\Providers\\EventServiceProvider',
     28 => 'App\\Providers\\RouteServiceProvider',
+<<<<<<< HEAD
+>>>>>>> parent of 21c04cd... Shinobi
+=======
 >>>>>>> parent of 21c04cd... Shinobi
   ),
   'eager' => 
@@ -69,6 +72,9 @@
     12 => 'App\\Providers\\AuthServiceProvider',
     13 => 'App\\Providers\\EventServiceProvider',
     14 => 'App\\Providers\\RouteServiceProvider',
+<<<<<<< HEAD
+>>>>>>> parent of 21c04cd... Shinobi
+=======
 >>>>>>> parent of 21c04cd... Shinobi
   ),
   'deferred' => 
