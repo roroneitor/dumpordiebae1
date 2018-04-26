@@ -15,7 +15,7 @@
   <?php if(isset($proyecto)): ?>
     <li class="list-group-item <?php echo e($proyecto->modulos->count()==0 ?:'hide'); ?>"><i class="glyphicon glyphicon-flag"></i> No hay modulos agregados</li>
   <?php else: ?>
-    <li class="list-group-item"><i class="glyphicon glyphicon-flag"></i> No hay modulos agregados</li>
+    <li class="list-group-item empty"><i class="glyphicon glyphicon-flag"></i> No hay modulos agregados</li>
   <?php endif; ?>
   <li class="list-group-item clone hide">
     <span></span>
