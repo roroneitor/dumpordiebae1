@@ -42,6 +42,9 @@
     27 => 'App\\Providers\\EventServiceProvider',
     28 => 'App\\Providers\\RouteServiceProvider',
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of 21c04cd... Shinobi
+=======
 >>>>>>> parent of 21c04cd... Shinobi
 =======
 >>>>>>> parent of 21c04cd... Shinobi
@@ -73,6 +76,9 @@
     13 => 'App\\Providers\\EventServiceProvider',
     14 => 'App\\Providers\\RouteServiceProvider',
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of 21c04cd... Shinobi
+=======
 >>>>>>> parent of 21c04cd... Shinobi
 =======
 >>>>>>> parent of 21c04cd... Shinobi
