@@ -6,7 +6,7 @@
       <!-- Sidebar user panel (optional) -->
       <div class="user-panel">
         <div class="pull-left image">
-          <img src="/img/loguito.png" class="img-circle" alt="User Image">
+          <img src="/img/negrito.png" class="img-circle" alt="User Image">
         </div>
         <div class="pull-left info">
           <p><?php echo e(Auth::user()->name); ?></p>
@@ -24,7 +24,7 @@
 
 <?php if(Auth::user()->hasRole('Administrador')): ?>
       <ul class="sidebar-menu" data-widget="tree">
-        <li class="header"><i class="fa fa-user"></i> Usuarios</li>
+        <li class="header"><i class="fa fa-user"></i> USUARIOS</li>
         <!-- Optionally, you can add icons to the links -->
         <li><a href="<?php echo e(route('register')); ?>"><span>Registrar Usuario</span></a></li>
         <li><a href="<?php echo e(route('AsignarRol')); ?>"><span>Asignar rol</span></a></li>
@@ -39,19 +39,19 @@
 <?php endif; ?>
 <?php if(Auth::user()->hasRole('Administrador', 'Lider de Proyecto') ): ?>
       <ul class="sidebar-menu" data-widget="tree">
-        <li class="header"><i class="fa fa-tasks"></i> PROYECTOS</li>
+        <li class="header"><i class="fa fa-file-text"></i> PROYECTOS</li>
         <!-- Optionally, you can add icons to the links -->
         <?php if(Auth::user()->hasRole('Administrador')): ?>
         <li><a href="<?php echo e(route('CrearProyecto')); ?>"><span>Crear proyecto</span></a></li>
           <?php endif; ?>
-
         <li><a href="<?php echo e(route('MostrarProyectos')); ?>"><span>Ver proyectos</span></a></li>
       </ul>
 <?php endif; ?>
       <ul class="sidebar-menu" data-widget="tree">
-        <li class="header">TAREAS ?</li>
+        <li class="header"><i class="fa fa-tasks"></i> TAREAS</li>
         <!-- Optionally, you can add icons to the links -->
-        <li><a href=""><i class="fa fa-link"></i> <span>ALGO CON TAREAS ?</span></a></li>
+        <li><a href=""><span>Agregar tareas</span></a></li>
+        <li><a href=""><span>Ver tareas</span></a></li>
       </ul>
       <!-- /.sidebar-menu -->
     </section>
