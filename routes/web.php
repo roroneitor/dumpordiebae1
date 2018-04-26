@@ -20,6 +20,8 @@ Auth::routes();
 Route::group(['middleware' => 'auth'], function () {
   Route::get('/home', 'HomeController@index')->name('home');
   Route::post('/getEstados', 'HomeController@getStates')->name('getStates');
+  Route::get('/users/roles', 'HomeController@roles')->name('AsignarRol');
+  Route::patch('users/roles/guardar', 'HomeController@saverole')->name('GuardarRol');
 
   //Clientes
 
@@ -39,3 +41,7 @@ Route::group(['middleware' => 'auth'], function () {
   Route::put('/proyecto/{proyecto}', 'ProyectosController@update')->name('ActualizarProyecto');
   Route::get('/proyecto/{proyecto}', 'ProyectosController@view')->name('VerProyecto');
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

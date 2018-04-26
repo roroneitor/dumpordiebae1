@@ -10,8 +10,9 @@ class DatabaseSeeder extends Seeder
      * @return void
      */
     public function run()
-    {
-      $this->call(UsersTableSeeder::class);
+    {    // La creación de datos de roles debe ejecutarse primero
+    $this->call(RoleTableSeeder::class);
+    $this->call(UsersTableSeeder::class);
       // Model::unguard();
       factory('App\Clientes', 4)->create();
       factory('App\Proyectos', 15)->create();

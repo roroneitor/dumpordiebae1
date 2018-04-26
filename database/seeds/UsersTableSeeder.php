@@ -2,6 +2,8 @@
 
 use Illuminate\Database\Seeder;
 use Carbon\Carbon;
+use App\User;
+use App\Role;
 
 class UsersTableSeeder extends Seeder
 {
@@ -12,36 +14,33 @@ class UsersTableSeeder extends Seeder
      */
     public function run()
     {
-      DB::table('users')->insert([
-          'name' => 'Rodrigo Navarrete',
-          'email' => 'rodrigo@rodrigo.com',
-          'phone' => '04148221649',
-          'country_id' => 237,
-          'state_id' => 4036,
-          'password' => bcrypt('123456'), // secret
-          'remember_token' => str_random(10),
-          'created_at' => Carbon::now()
-      ]);
-      DB::table('users')->insert([
-          'name' => 'Agustin Marcano',
-          'email' => 'amarcano@gmail.com',
-          'phone' => '04121234567',
-          'country_id' => 237,
-          'state_id' => 4036,
-          'password' => bcrypt('123456'), // secret
-          'remember_token' => str_random(10),
-          'created_at' => Carbon::now()
-      ]);
 
-      DB::table('users')->insert([
-          'name' => 'Isidro Gonzalez',
-          'email' => 'isidro@isidro.com',
-          'phone' => '04141990880',
-          'country_id' => 237,
-          'state_id' => 4036,
-          'password' => bcrypt('123321'), // secret
-          'remember_token' => str_random(10),
-          'created_at' => Carbon::now()
-      ]);
+      $role_user = Role::where('name', 'Usuario')->first();
+      $role_admin = Role::where('name', 'Administrador')->first();
+      $role_pleader = Role::where('name', 'Lider de Proyecto')->first();
+
+      $user = new User();
+      $user->name = 'Usuario';
+      $user->email = 'user@example.com';
+      $user->password = bcrypt('secret');
+      $user->phone = '04148221650';
+      $user->save();
+      $user->roles()->attach($role_user);
+
+      $user = new User();
+      $user->name = 'Administrador';
+      $user->email = 'admin@example.com';
+      $user->password = bcrypt('secret');
+      $user->phone = '04148221649';
+      $user->save();
+      $user->roles()->attach($role_admin);
+
+      $user = new User();
+      $user->name = 'Lider de Proyecto';
+      $user->email = 'adminP@example.com';
+      $user->password = bcrypt('secret');
+      $user->phone = '04148221655';
+      $user->save();
+      $user->roles()->attach($role_pleader);
     }
 }

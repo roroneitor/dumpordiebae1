@@ -1,16 +1,15 @@
-@extends('layouts.master')
-@section('content')
+<?php $__env->startSection('content'); ?>
   <div class="panel panel-default">
     <div class="panel-heading">
     <h3><b>  <i class="fa fa-database"></i> Proyectos</b></h3>
     </div>
     <div class="panel-body"><h4>
-      {{$numerodeproyectos}} proyectos creados
+      <?php echo e($numerodeproyectos); ?> proyectos creados
 </h4>
     </div>
     <div class="panel-footer">
-      <a href="{{ route('CrearProyecto') }}" class="btn btn-success "type="button"><b>+</b> Proyectos</a>
-      <a href="{{ route('MostrarProyectos') }}" class="btn btn-primary "type="button">Ver proyectos</a>
+      <a href="<?php echo e(route('CrearProyecto')); ?>" class="btn btn-success "type="button"><b>+</b> Proyectos</a>
+      <a href="<?php echo e(route('MostrarProyectos')); ?>" class="btn btn-primary "type="button">Ver proyectos</a>
     </div>
 </div>
 
@@ -21,7 +20,7 @@
       <h3><b><i class="fa fa-tasks"></i></i> Tareas</b></h3>
       </div>
       <div class="panel-body"><h4>
-        {{$numerodeproyectos}} tareas en curso
+        <?php echo e($numerodeproyectos); ?> tareas en curso
       </h4>
       </div>
       <div class="panel-footer">
@@ -38,7 +37,7 @@
       </div>
       <div class="panel-body">
         <h4>
-        {{$numerodeusuarios}} usuarios activos
+        <?php echo e($numerodeusuarios); ?> usuarios activos
         </h4>
       </div>
     </div>
@@ -51,14 +50,16 @@
       </div>
       <div class="panel-body">
         <h4>
-        {{$numerodeclientes}} clientes
+        <?php echo e($numerodeclientes); ?> clientes
         </h4>
       </div>
       <div class="panel-footer">
-        <a href="{{ route('CrearCliente') }}" class="btn btn-success "type="button"><b>+</b> Cliente</a>
-        <a href="{{ route('MostrarClientes') }}" class="btn btn-primary "type="button">Ver clientes</a>
+        <a href="<?php echo e(route('CrearCliente')); ?>" class="btn btn-success "type="button"><b>+</b> Cliente</a>
+        <a href="<?php echo e(route('MostrarClientes')); ?>" class="btn btn-primary "type="button">Ver clientes</a>
       </div>
     </div>
   </div>
 </div>
-@endsection
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('layouts.master', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

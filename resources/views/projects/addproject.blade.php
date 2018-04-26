@@ -14,12 +14,16 @@
     {{ method_field('POST') }}
     <div class="box-body">
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-4">
           @include('projects._projectform')
         </div>
 
-        <div class="col-md-6">
+        <div class="col-md-4">
           @include('projects._moduleform')
+        </div>
+
+        <div class="col-md-4">
+          @include('projects._userform')
         </div>
       </div>
       <div class="box-footer">

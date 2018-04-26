@@ -3,7 +3,12 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Auth;
+use App\User;
+use App\Role;
 use DB;
+use App\Proyectos;
+use App\Clientes;
 
 class HomeController extends Controller
 {
@@ -22,14 +27,36 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
-    {
-        return view('home');
-    }
+     public function index(Request $request)
+ {
+   $numerodeproyectos = Proyectos::count();
+   $numerodeusuarios = User::count();
+   $numerodeclientes = Clientes::count();
+   $proyectos = Proyectos::latest('date_init')->get();
+     $request->user()->authorizeRoles(['Usuario', 'Administrador', 'Lider de Proyecto']);
+     return view('home', compact('numerodeproyectos', 'numerodeusuarios', 'numerodeclientes', 'proyectos'));
+ }
 
-    public function getStates(Request $request){
-      $states = DB::table('states')->where('country_id', $request->input('country_id'))->get();
+ public function roles(){
+   $Roles = Role::all();
+   $Usuarios = User::all()->except(Auth::id());
+   return view('AsignarRoles', compact('Usuarios', 'Roles'));
+ }
 
-      return response()->json($states);
-    }
+ public function saverole(Request $request)
+ {
+   $this->validate($request, [
+     'user_id' => 'required',
+     'role_id' => 'required',
+   ]);
+
+   DB::table('role_user')
+   ->where('user_id',$request['user_id'])
+   ->update([
+     'role_id' => $request['role_id']
+            ]);
+
+   return view('home');
+ }
+
 }
