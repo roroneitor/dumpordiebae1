@@ -7,7 +7,6 @@ use App\Proyectos;
 use App\Modulos;
 use DB;
 use App\Clientes;
-
 use Carbon\Carbon;
 
 class ProyectosController extends Controller

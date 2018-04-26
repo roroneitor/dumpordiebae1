@@ -20,8 +20,10 @@ Auth::routes();
 Route::group(['middleware' => 'auth'], function () {
   Route::get('/home', 'HomeController@index')->name('home');
   Route::post('/getEstados', 'HomeController@getStates')->name('getStates');
+  Route::get('/users/roles', 'HomeController@roles')->name('AsignarRol');
+  Route::patch('users/roles/guardar', 'HomeController@saverole')->name('GuardarRol');
 
-  //Clientes
+  //>2Clientes
 
   Route::get('/clientes/ver', 'ClientesController@show')->name('MostrarClientes');
   Route::get('/clientes/crear', 'ClientesController@create')->name('CrearCliente');

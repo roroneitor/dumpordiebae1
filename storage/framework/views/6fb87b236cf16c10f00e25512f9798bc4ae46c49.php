@@ -21,11 +21,14 @@
         <!-- Optionally, you can add icons to the links -->
         <li class="active"><a href=""><i class="fa fa-link"></i> <span>Principal</span></a></li>
       </ul>
+
       <ul class="sidebar-menu" data-widget="tree">
         <li class="header"><i class="fa fa-user"></i> Usuarios</li>
         <!-- Optionally, you can add icons to the links -->
         <li><a href="<?php echo e(route('register')); ?>"><span>Registrar Usuario</span></a></li>
+        <li><a href="<?php echo e(route('AsignarRol')); ?>"><span>Asignar rol</span></a></li>
       </ul>
+
       <ul class="sidebar-menu" data-widget="tree">
         <li class="header"><i class="fa fa-users"></i> CLIENTES</li>
         <!-- Optionally, you can add icons to the links -->
@@ -47,3 +50,4 @@
     </section>
     <!-- /.sidebar -->
   </aside>
+  

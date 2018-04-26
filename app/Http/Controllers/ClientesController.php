@@ -24,6 +24,7 @@ class ClientesController extends Controller
     $country = DB::table('countries')->get();
     $states = DB::table('states')->get();
     $clientes = Clientes::get();
+    
     return view('clients.showclients', compact('clientes', 'country', 'states') );
   }
 //Guardar cliente
