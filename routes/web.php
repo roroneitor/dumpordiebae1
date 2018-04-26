@@ -23,7 +23,7 @@ Route::group(['middleware' => 'auth'], function () {
   Route::get('/users/roles', 'HomeController@roles')->name('AsignarRol');
   Route::patch('users/roles/guardar', 'HomeController@saverole')->name('GuardarRol');
 
-  //>2Clientes
+  //Clientes
 
   Route::get('/clientes/ver', 'ClientesController@show')->name('MostrarClientes');
   Route::get('/clientes/crear', 'ClientesController@create')->name('CrearCliente');

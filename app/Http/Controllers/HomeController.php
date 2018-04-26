@@ -7,6 +7,8 @@ use Auth;
 use App\User;
 use App\Role;
 use DB;
+use App\Proyectos;
+use App\Clientes;
 
 class HomeController extends Controller
 {
@@ -27,8 +29,12 @@ class HomeController extends Controller
      */
      public function index(Request $request)
  {
+   $numerodeproyectos = Proyectos::count();
+   $numerodeusuarios = User::count();
+   $numerodeclientes = Clientes::count();
+   $proyectos = Proyectos::latest('date_init')->get();
      $request->user()->authorizeRoles(['Usuario', 'Administrador', 'Lider de Proyecto']);
-     return view('home');
+     return view('home', compact('numerodeproyectos', 'numerodeusuarios', 'numerodeclientes', 'proyectos'));
  }
 
  public function roles(){

@@ -19,7 +19,7 @@
       <ul class="sidebar-menu" data-widget="tree">
         <li class="header">DASHBOARD</li>
         <!-- Optionally, you can add icons to the links -->
-        <li class="active"><a href=""><i class="fa fa-link"></i> <span>Principal</span></a></li>
+        <li class="active"><a href="<?php echo e(route('home')); ?>"><i class="fa fa-link"></i> <span>Principal</span></a></li>
       </ul>
 
 <?php if(Auth::user()->hasRole('Administrador')): ?>
@@ -39,7 +39,7 @@
 <?php endif; ?>
 <?php if(Auth::user()->hasRole('Administrador', 'Lider de Proyecto') ): ?>
       <ul class="sidebar-menu" data-widget="tree">
-        <li class="header"><i class="fa fa-file-text"></i> PROYECTOS</li>
+        <li class="header"><i class="fa  fa-database"></i> PROYECTOS</li>
         <!-- Optionally, you can add icons to the links -->
         <?php if(Auth::user()->hasRole('Administrador')): ?>
         <li><a href="<?php echo e(route('CrearProyecto')); ?>"><span>Crear proyecto</span></a></li>
