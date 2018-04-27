@@ -20,26 +20,50 @@ class UsersTableSeeder extends Seeder
       $role_pleader = Role::where('name', 'Lider de Proyecto')->first();
 
       $user = new User();
-      $user->name = 'Usuario';
-      $user->email = 'user@example.com';
+      $user->name = 'Wilmer Zambrano';
+      $user->email = 'usuario1@ejemplo.com';
+      $user->password = bcrypt('secret');
+      $user->phone = '04161234567';
+      $user->save();
+      $user->roles()->attach($role_user);
+
+      $user = new User();
+      $user->name = 'Tulio Mulford';
+      $user->email = 'usuario2@ejemplo.com';
       $user->password = bcrypt('secret');
       $user->phone = '04148221650';
       $user->save();
       $user->roles()->attach($role_user);
 
       $user = new User();
-      $user->name = 'Administrador';
-      $user->email = 'admin@example.com';
+      $user->name = 'Edgard Garcia';
+      $user->email = 'usuario3@ejemplo.com';
+      $user->password = bcrypt('secret');
+      $user->phone = '04148221639';
+      $user->save();
+      $user->roles()->attach($role_user);
+
+      $user = new User();
+      $user->name = 'Rodrigo Navarrete';
+      $user->email = 'admin@ejemplo.com';
       $user->password = bcrypt('secret');
       $user->phone = '04148221649';
       $user->save();
       $user->roles()->attach($role_admin);
 
       $user = new User();
-      $user->name = 'Lider de Proyecto';
-      $user->email = 'adminP@example.com';
+      $user->name = 'Pedro Perez';
+      $user->email = 'liderP@ejemplo.com';
       $user->password = bcrypt('secret');
       $user->phone = '04148221655';
+      $user->save();
+      $user->roles()->attach($role_pleader);
+
+      $user = new User();
+      $user->name = 'Juan Hernandez';
+      $user->email = 'lider2P@ejemplo.com';
+      $user->password = bcrypt('secret');
+      $user->phone = '04141234567';
       $user->save();
       $user->roles()->attach($role_pleader);
     }
