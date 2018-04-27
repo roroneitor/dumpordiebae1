@@ -37,8 +37,8 @@ class ProyectosController extends Controller
 
     $this->validate($request, [
       'title' => 'required',
-      'date_init' => 'required',
-      'date_end' => 'required',
+      'date_init' => 'required|date|',
+      'date_end' => 'required|date|',
       'description' => 'required'
     ]);
 
@@ -85,6 +85,7 @@ class ProyectosController extends Controller
     }
 
     return response()->json(true);
+    return view('home');
   }
 
   public function edit(Proyectos $proyecto)

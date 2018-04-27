@@ -13,12 +13,16 @@
 
       <div class="box-body">
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-4">
             <?php echo $__env->make('projects._projectform', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
           </div>
 
-          <div class="col-md-6">
+          <div class="col-md-4">
             <?php echo $__env->make('projects._moduleform', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+          </div>
+
+          <div class="col-md-4">
+            <?php echo $__env->make('projects._userform', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
           </div>
         </div>
         <div class="box-footer">

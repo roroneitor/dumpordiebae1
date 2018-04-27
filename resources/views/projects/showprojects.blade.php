@@ -12,11 +12,11 @@
           <table id="tabla1" class="table table-bordered table-striped">
             <thead>
               <tr>
-                <th width="29%">Titulo</th>
-                <th width="9%">Fecha Inicial</th>
-                <th width="8%">Fecha Final</th>
-                <th width="30%">Descripción</th>
-                <th width="9%">Acción</th>
+                <th width="25%">Titulo</th>
+                <th width="10%">Fecha Inicial</th>
+                <th width="9%">Fecha Final</th>
+                <th width="33%">Descripción</th>
+                <th width="10%">Acción</th>
               </tr>
             </thead>
             <tbody>
